@@ -1,0 +1,927 @@
+*
+	padding: 0
+	margin: 0
+	border: 0
+	transition: .7s ease-in-out
+	box-sizing: border-box
+*:before *:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+a:focus,a:active
+	outline: none
+nav,footer,header,aside
+	display: block
+html,body
+		height: 100%
+		width: 100%
+		font-size: 100%
+		line-height: 1
+		font-size: 14px
+		font-family: 'Raleway', sans-serif
+		-ms-text-size-adjust: 100%
+		-moz-text-size-adjust: 100%
+		-webkit-text-size-adjust: 100%
+		margin: 0 auto
+		outline: none
+input::-ms-clear
+	display: none
+input
+	&::-webkit-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-moz-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&:-ms-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-webkit-inner-spin-button
+		-webkit-appearance: none
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+	&[type='number']
+		-moz-appearance: textfield
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
+button
+	cursor: pointer
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a,a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+	outline: none !important
+video:active, video:focus
+	outline: none !important
+ul li
+	list-style: none
+
+//************screen_one************
+.block__wrapper
+	min-width: 320px
+	max-width: 1410px
+	width: 100%
+	background-color: grey
+	margin: 0 auto
+//************screen_one************
+.screen__one
+	width: 100%
+	height: 730px
+	background-image: url('../img/screenOneBoottom.png')
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	top: 0
+	right: 0
+	left: 0
+	@media screen and (max-width: 1320px)
+		height: 900px
+	@media screen and (max-width: 980px)
+		height: 1050px
+	@media screen and (max-width: 640px)
+		height: 1420px
+	@media screen and (max-width: 560px)
+		height: 1430px
+	@media screen and (max-width: 480px)
+		height: 1300px
+	@media screen and (max-width: 420px)
+		height: 1200px
+	@media screen and (max-width: 370px)
+		height: 1070px
+	@media screen and (max-width: 350px)
+		height: 1000px
+	&-bottom-bg
+		width: 100%
+		height: 375px
+		background-image: url('../img/screenOneBgOpacity.png')
+		background-repeat: no-repeat
+	&-logo
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: 55px
+		flex-direction: column
+		padding: 10px
+	&-name
+		z-index: 2
+		@media screen and (max-width: 560px)
+			width: 100%
+	&-text__box
+		z-index: 2
+		position: relative
+		height: 90px
+		width: 550px
+		display: flex
+		align-items: center
+		margin-top: 30px
+		@media screen and (max-width: 560px)
+			width: 100%
+	&-content
+		font-size: 24px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		font-weight: 100
+		letter-spacing: 1.2px
+		padding: 0 5px
+		@media screen and (max-width: 560px)
+			font-size: 20px
+			line-height: 1.2
+		@media screen and (max-width: 340px)
+			padding-left: 15px
+			text-align: left
+	&-braket__top
+		position: absolute
+		top: 0
+		left: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+	&-braket__bottom
+		position: absolute
+		bottom: 0
+		right: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+	&-people
+		position: absolute
+		top: 0
+		right: 0
+	&-down
+		width: 100%
+		display: flex
+		justify-content: flex-end
+	&-multivarca
+		position: absolute
+		display: flex
+		align-items: flex-end
+		top: 0
+		left: 35px
+		@media screen and (max-width: 860px)
+			left: -70px
+		@media screen and (max-width: 640px)
+			flex-direction: column
+			width: 100%
+			align-items: center
+			left: 0
+			top: 50px
+		&__left
+		&__left-img
+			@media screen and (max-width: 720px)
+				width: 100%
+		&__right
+			position: absolute
+			top: 49%
+			left: 52%
+			@media screen and (max-width: 640px)
+				position: relative
+				top: 0
+				left: 0
+		&__right-img
+			@media screen and (max-width: 720px)
+				width: 450px
+			@media screen and (max-width: 640px)
+				width: 100%
+	&-food
+		display: flex
+		padding: 10px 10px
+		@media screen and (max-width: 1320px)
+			width: 100%
+			position: absolute
+			bottom: 0
+			left: 0
+			align-items: center
+			justify-content: center
+			flex-wrap: wrap
+		&__left
+			display: flex
+			flex-direction: column
+			@media screen and (max-width: 1320px)
+				flex-direction: row
+			&-image1
+				margin: 10px 0 -15px 65px
+				@media screen and (max-width: 640px)
+					margin: 0
+					width: 50%
+			&-image2
+				@media screen and (max-width: 1320px)
+					width: 50%
+		&__right
+			margin: 75px 6px 0 -40px
+			@media screen and (max-width: 1320px)
+				margin: 0
+			&-image
+				@media screen and (max-width: 360px)
+					width: 100%
+//************screen_two************
+.screen__two
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	background-image: url('../img/screenTwoBG.png')
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 10px 0 100px 0
+	@media screen and (max-width: 980px)
+		padding: 10px 0 30px 0
+	&-text__box
+		position: relative
+		width: 475px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-top: 25px
+		@media screen and (max-width: 560px)
+			width: 100%
+			padding: 0 5px
+	&-braket__top
+		position: absolute
+		top: 0
+		left: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-box__text
+		font-size: 40px
+		color: #fff
+		margin: 15px 10px
+		text-transform: uppercase
+		@media screen and (max-width: 560px)
+			font-size: 20px
+		&-bottom
+			font-size: 18px
+			color: red
+			margin-top: 15px
+			letter-spacing: 1.2px
+			text-transform: uppercase
+			@media screen and (max-width: 560px)
+				font-size: 18px
+				padding: 0 10px
+	&-braket__bottom
+		position: absolute
+		bottom: 0
+		right: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-container
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media screen and (max-width: 980px)
+			flex-direction: column
+		&__slider
+			min-width: 670px
+			width: 50%
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			position: relative
+			left: -20px
+			@media screen and (max-width: 980px)
+				min-width: 320px
+				width: 100%
+				left: 0
+			&-left
+				position: absolute
+				top: 54%
+				left: 20px
+				@media screen and (max-width: 980px)
+					left: 0
+			&-center
+				z-index: 2
+				@media screen and (max-width: 980px)
+					width: 100%
+			&-right
+				position: absolute
+				top: 54%
+				right: 20px
+				@media screen and (max-width: 980px)
+					right: 0
+		&__text
+			width: 625px
+			// height: 280px
+			margin-top: 150px
+			padding: 0 10px
+			@media screen and (max-width: 980px)
+				width: 100%
+				margin-top: 50px
+			&-name
+				font-size: 30px
+				color: #FF0F27
+				text-align: left
+				text-transform: uppercase
+				margin-bottom: 40px
+		&__content
+			width: 85%
+			font-size: 22px
+			color: #fff
+			text-align: left
+			text-transform: uppercase
+			letter-spacing: 1.5px
+			line-height: 1.3
+			@media screen and (max-width: 1200px)
+				font-size: 18px
+				width: 100%
+//************screen_three************
+.screen__three
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	background-image: url('../img/screenTwoBG.png')
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 10px 0 100px 0
+	@media screen and (max-width: 980px)
+		padding: 10px 0 30px 0
+	&-text__box
+		position: relative
+		width: 500px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-top: 25px
+		@media screen and (max-width: 560px)
+			width: 100%
+			padding: 0 5px
+	&-braket__top
+		position: absolute
+		top: 0
+		left: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-box__text
+		font-size: 40px
+		color: #fff
+		margin: 15px 10px
+		text-transform: uppercase
+		@media screen and (max-width: 560px)
+			font-size: 20px
+		&-bottom
+			font-size: 18px
+			color: red
+			margin-top: 15px
+			letter-spacing: 1.2px
+			text-transform: uppercase
+			@media screen and (max-width: 560px)
+				font-size: 18px
+				padding: 0 10px
+	&-braket__bottom
+		position: absolute
+		bottom: 0
+		right: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-container
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-around
+		@media screen and (max-width: 980px)
+			flex-direction: column
+		&__left
+			width: 580px
+			@media screen and (max-width: 980px)
+				width: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				margin: 50px 0
+				padding: 0 10px
+			&-string
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				&__number-one, &__number-three
+					width: 30px
+					height: 30px
+					color: #fff
+					display: flex
+					align-items: center
+					justify-content: center
+					border-radius: 50%
+					background-color: red
+					margin-right: 10px
+				&__text-one, &__text-three
+					width: 470px
+					margin-top: 16px
+					font-size: 22px
+					color: red
+					text-align: left
+					text-transform: uppercase
+					letter-spacing: 1.5px
+					line-height: 1.3
+					@media screen and (max-width: 560px)
+						width: 100%
+				&__number-two, &__number-four
+					width: 30px
+					height: 30px
+					color: red
+					display: flex
+					align-items: center
+					justify-content: center
+					border-radius: 50%
+					background-color: #fff
+					margin-right: 10px
+				&__text-two, &__text-four
+					width: 470px
+					margin-top: 16px
+					font-size: 22px
+					color: #fff
+					text-align: left
+					text-transform: uppercase
+					letter-spacing: 1.5px
+					line-height: 1.3
+					@media screen and (max-width: 560px)
+						width: 100%
+		&__right
+			position: relative
+			&-image
+			&-number__one
+				width: 30px
+				height: 30px
+				color: #fff
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				background-color: red
+				margin-right: 10px
+				position: absolute
+				top: 0
+				left: 95px
+			&-number__two
+				width: 30px
+				height: 30px
+				color: red
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				background-color: #fff
+				position: absolute
+				top: 120px
+				left: 60px
+			&-number__three
+				width: 30px
+				height: 30px
+				color: #fff
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				background-color: red
+				margin-right: 10px
+				position: absolute
+				top: 50px
+				right: 25px
+			&-number__four
+				width: 30px
+				height: 30px
+				color: red
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				background-color: #fff
+				position: absolute
+				bottom: 120px
+				right: -10px
+				@media screen and (max-width: 980px)
+					right: 0
+//************screen_four************
+.screen__four
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	background-color: #fff
+	&-name
+		font-size: 40px
+		color: red
+		text-transform: uppercase
+		margin: 30px 0 65px 0
+		font-weight: bold
+	&-box
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		padding-left: 50px
+		@media screen and (max-width: 980px)
+			padding-left: 0
+		@media screen and (max-width: 780px)
+			flex-direction: column
+		&__content
+			display: flex
+			align-items: flex-start
+			justify-content: flex-start
+			flex-direction: column
+			width: 33%
+			padding: 0 10px
+			text-transform: uppercase
+			z-index: 2
+			@media screen and (max-width: 780px)
+				width: 100%
+			&-name
+				font-size: 20px
+				color: red
+				height: 100px
+				width: 60%
+				font-weight: bold
+				@media screen and (max-width: 780px)
+					height: max-content
+					margin-bottom: 15px
+					width: 100%
+			&-text
+				font-size: 16px
+				color: #000
+				margin-bottom: 30px
+//************screen_five************
+.screen__five
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	background-color: #BF7357
+	padding: 10px 0 00px 0
+	position: relative
+	@media screen and (max-width: 980px)
+		padding: 10px 0 30px 0
+	&-table
+		position: absolute
+		left: 0
+		top: -110px
+		@media screen and (max-width: 560px)
+			width: 100%
+	&-text__box
+		position: relative
+		width: 410px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-top: 25px
+		@media screen and (max-width: 560px)
+			width: 100%
+			padding: 0 5px
+	&-braket__top
+		position: absolute
+		top: 0
+		left: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-box__text
+		font-size: 40px
+		color: #fff
+		margin: 15px 10px
+		text-transform: uppercase
+		text-align: center
+		@media screen and (max-width: 560px)
+			font-size: 20px
+	&-braket__bottom
+		position: absolute
+		bottom: 0
+		right: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-container
+		width: 100%
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-around
+		flex-wrap: wrap
+		position: relative
+		z-index: 2
+		padding: 0 50px
+		margin-top: 175px
+		@media screen and (max-width: 980px)
+			margin-top: 30px
+		&__box
+			width: 250px
+			height: 300px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			margin-top: 15px
+			border: 1px solid #000
+			background-color: rgba(0, 0, 0, 0.7)
+			border-radius: 5px
+		&__img
+			margin-top: 50px
+		&__img-hand
+			margin-top: 10px
+		&__text
+			height: 90px
+			font-size: 12px
+			letter-spacing: 1.2px
+			line-height: 1.5
+			text-transform: uppercase
+			color: #fff
+			padding: 0 15px
+	&-button
+		width: 165px
+		height: 30px
+		background-color: red
+		border-radius: 10px
+		margin: 80px 0 70px 0
+		display: flex
+		align-items: center
+		justify-content: center
+		&__link
+			color: #fff
+			font-size: 15px
+			letter-spacing: 1.3px
+			text-transform: uppercase
+			display: flex
+			align-items: center
+		&__img
+			margin-left: 10px
+//************screen_six************
+.screen__six
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	background-image: url('../img/screenTwoBG.png')
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 10px 0 135px 0
+	@media screen and (max-width: 980px)
+		padding: 10px 5px 30px 5px
+	&-text__box
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-top: 25px
+		@media screen and (max-width: 560px)
+			width: 100%
+			padding: 0 5px
+	&-braket__top
+		position: absolute
+		top: 0
+		left: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-box__text
+		font-size: 40px
+		color: #fff
+		margin: 15px 20px
+		text-transform: uppercase
+		text-align: center
+		line-height: 1.2
+		letter-spacing: 1.2px
+		@media screen and (max-width: 560px)
+			font-size: 20px
+	&-braket__bottom
+		position: absolute
+		bottom: 0
+		right: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-container
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-direction: row
+		flex-wrap: wrap
+		margin-top: 100px
+		&__left
+			font-size: 22px
+			letter-spacing: 1.3px
+			text-transform: uppercase
+			@media screen and (max-width: 980px)
+				width: 100%
+				padding: 0 10px
+			&-title
+				color: red
+				font-weight: bold
+				margin-bottom: 40px
+			&-text
+				color: #fff
+				display: flex
+				flex-direction: column
+				font-weight: 100
+				line-height: 1.2
+		&__right
+			@media screen and (max-width: 980px)
+				margin-top: 30px
+			&-image
+				@media screen and (max-width: 460px)
+					width: 100%
+//************screen_seven************
+.screen__seven
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: row
+	justify-content: center
+	padding: 25px 10px 35px 10px
+	background-color: #fff
+	@media screen and (max-width: 980px)
+		flex-direction: column
+	&-text
+		font-size: 18px
+		color: #000000
+		letter-spacing: 1.2px
+		line-height: 1.3
+		margin-left: 70px
+		text-transform: uppercase
+		@media screen and (max-width: 980px)
+			width: 100%
+			padding: 0 10px
+			margin-left: 0
+	&-image
+		margin: 0 55px
+		@media screen and (max-width: 980px)
+			margin-top: 30px
+//************screen_eight************
+.screen__eight
+	width: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	background-image: url('../img/screenTwoBG.png')
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 0px 0 35px 0
+	@media screen and (max-width: 980px)
+		padding: 10px 5px 30px 5px
+	&-text__box
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-top: 25px
+		@media screen and (max-width: 560px)
+			width: 100%
+			padding: 0 5px
+	&-braket__top
+		position: absolute
+		top: 0
+		left: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-box__text
+		font-size: 40px
+		color: #fff
+		margin: 15px 20px
+		text-transform: uppercase
+		text-align: center
+		line-height: 1.2
+		letter-spacing: 1.2px
+		@media screen and (max-width: 560px)
+			font-size: 20px
+		&-bottom
+			font-size: 18px
+			color: #fff
+			margin-top: 15px
+			line-height: 1.3
+			letter-spacing: 1.3px
+			text-transform: uppercase
+			text-align: center
+			font-weight: 100
+			@media screen and (max-width: 560px)
+				font-size: 18px
+				padding: 0 10px
+				font-size: 14px
+				text-align: left
+	&-braket__bottom
+		position: absolute
+		bottom: 0
+		right: 0
+		@media screen and (max-width: 560px)
+			width: 10%
+			margin: 0 5px
+	&-content
+		width: 1005px
+		margin: 80px 0 100px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-around
+		@media screen and (max-width: 1200px)
+			width: 100%
+			padding: 0 55px
+		&__box
+			width: 190px
+			height: 200px
+			text-transform: uppercase
+			background-color: grey
+			position: relative
+			display: flex
+			align-items: center
+			flex-direction: column
+			justify-content: space-between
+			font-size: 15px
+			margin: 30px 0
+			&:hover
+				transform: scale(1.3)
+				z-index: 2
+			&-image
+			&-name
+				color: #383838
+				font-weight: bold
+				width: 100px
+				text-align: center
+			&-link
+				color: #fff
+				border-bottom: 1px solid #ffffff
+				margin-bottom: 5px
+			&-new
+				position: absolute
+				top: -50px
+				right: -50px
+				width: 100px
+				height: 100px
+				font-size: 26px
+				color: #fff
+				border-radius: 50%
+				background-color: red
+				display: flex
+				align-items: center
+				justify-content: center
+				transform: rotate(-5deg)
+	&-button
+		width: 165px
+		height: 30px
+		background-color: red
+		border-radius: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		&__link
+			color: #fff
+			font-size: 15px
+			letter-spacing: 1.3px
+			text-transform: uppercase
+			display: flex
+			align-items: center
+//************screen_nine************
+.screen__nine
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	&-bg
+		width: 100%
+		height: 100%
+	&-play
+		width: 135px
+		height: 135px
+		background-color: rgba(255, 255, 255, .5)
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-left: 20px
+		position: absolute
+		top: 45%
+		left: 45%
+		&:hover
+			transform: scale(1.1)
+		@media screen and (max-width: 1024px)
+			width: 120px
+			height: 120px
+		@media screen and (max-width: 760px)
+			width: 60px
+			height: 60px
+			padding-left: 10px
+		&__img
+			@media screen and (max-width: 760px)
+				width: 50%

@@ -1,0 +1,510 @@
+*
+	padding: 0
+	margin: 0
+	border: 0
+	transition: .7s ease-in-out
+	box-sizing: border-box
+*:before *:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+a:focus,a:active
+	outline: none
+nav,footer,header,aside
+	display: block
+html,body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-family: 'Exo 2', sans-serif
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+	margin: 0 auto
+	outline: none
+	scroll-behavior: smooth
+input::-ms-clear
+	display: none
+input
+	&::-webkit-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-moz-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&:-ms-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-webkit-inner-spin-button
+		-webkit-appearance: none
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+	&[type='number']
+		-moz-appearance: textfield
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
+button
+	cursor: pointer
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a,a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+	outline: none !important
+video:active, video:focus
+	outline: none !important
+ul li
+	list-style: none
+//colors
+$violet: #52458A
+$blue: #422892
+$blueDark: #06054A
+$gold: #FF8C00
+$red: #DC1438
+$textGrey: #858585
+$textViolet: #2F2949
+//fonts
+$ibm: IBM Plex Sans
+$tenors: Tenor Sans
+//styles
+@mixin dflex
+	display: flex
+	align-items: center
+	justify-content: center
+
+
+//********************Start*project************************
+::-webkit-scrollbar-track
+	background-color: transparent
+	box-shadow: 0px 0px 3px #000 inset
+::-webkit-scrollbar-thumb
+	-webkit-border-radius: 15px
+	border-radius: 15px
+	background-color: $blueDark
+	box-shadow: 0px 1px 1px #111 inset
+	background-position: center
+	background-repeat: no-repeat
+	&:hover
+		background-color: $red
+::-webkit-scrollbar
+	width: 8px
+::selection
+	background-color: $red
+::-moz-selection
+	background-color: $red
+
+.wrapper
+	width: 100%
+	height: 100%
+	margin: 0 auto
+//********************burger****************************
+
+.burger
+	display: flex
+	justify-content: flex-start
+	flex-direction: column
+	width: 250px
+	height: 100%
+	background-image: linear-gradient( to right, $blueDark, $violet)
+	box-shadow: 9px 9px 13px 0px #1b09817c
+	position: fixed
+	left: -250px
+	top: 0
+	z-index: 20
+	transition: all ease 1s
+	z-index: 100
+	@media screen and (min-width: 980px)
+		display: none
+	&__button
+		width: 70px
+		height: 70px
+		background-color: transparent
+		border-radius: 8px
+		position: absolute
+		right: -70px
+		top: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		transition: all ease 1s
+		&-touch
+			width: 60px
+			height: 3px
+			background-color: $blueDark
+			display: flex
+			position: absolute
+			&::before,&::after
+				content: ""
+				position: absolute
+				height: inherit
+				border-radius: inherit
+				background-color: inherit
+				margin: auto
+				width: 30%
+				transition: all ease 0.5s
+			&::before
+				top: -10px
+				left: 0
+				transform-origin: left
+			&::after
+				bottom: -10px
+				right: 0
+				transform-origin: right
+			@media screen and (max-width: 780px)
+				width: 40px
+	&__menu
+		margin: 150px 0 20px 0
+		&-logo
+			position: absolute
+			top: 20px
+			left: 90px
+		&-link
+			color: #ffffff
+			font-size: 30px
+			padding-left: 30px
+			margin-top: 30px
+			width: 100%
+			background-color: transparent
+			display: flex
+			align-items: flex-start
+			transform-style: preserve-3d
+			span
+				font-size: 25px
+				color: #fff
+				text-transform: uppercase
+			&::after
+				top: -100%
+				left: 0
+				width: 100%
+				height: 100%
+				display: flex
+				align-items: flex-start
+				background-color: transparent
+				position: absolute
+				color: #fff
+				font-size: 25px
+				content: attr(data-title)
+				text-transform: uppercase
+				margin-left: 30px
+				transform-origin: left bottom
+				transform: rotateX(90deg)
+			&:hover, &:focus
+				transform-origin: center bottom
+				transform: rotateX(-90deg) translateY(100%)
+.active
+	position: fixed
+	left: 0
+.open
+	height: 3px
+	background-color: $blueDark
+	display: flex
+	position: absolute
+	transform: rotate(135deg)
+	&::before,&::after
+		content: ""
+		position: absolute
+		height: inherit
+		border-radius: inherit
+		background-color: inherit
+		margin: auto
+		width: 50%
+		transition: all ease 0.5s
+	&::before
+		left: 0
+		transform-origin: left
+		top: 0
+		transform: translateX(100%) rotate(-90deg)
+	&::after
+		right: 0
+		transform-origin: right
+		bottom: 0
+		transform: translateX(-100%) rotate(-90deg)
+.over
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	display: none
+	z-index: 99
+.close
+	display: block
+
+//*********************header**************************
+
+.menu
+	width: 100vw
+	padding: 5px
+	background-color: #fff
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 50
+	display: flex
+	align-items: center
+	justify-content: space-around
+	@media screen and (max-width: 980px)
+		display: none
+	&__logo
+	&__link
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-around
+		width: 500px
+		&-nav
+			width: 100%
+			display: flex
+			font-size: 18px
+			align-items: center
+			transform-style: preserve-3d
+			color: $blueDark
+			&::after
+				top: -100%
+				left: 0
+				width: 100%
+				height: 100%
+				display: flex
+				align-items: flex-start
+				position: absolute
+				color: #fff
+				font-size: 18px
+				content: attr(data-title)
+				color: $blueDark
+				transform-origin: left bottom
+				transform: rotateX(90deg)
+				@media screen and (max-width: 780px)
+					font-size: 22px
+			&:hover, &:focus
+				transform-origin: center bottom
+				transform: rotateX(-90deg) translateY(100%)
+	&__phone
+		@include dflex
+		flex-direction: column
+		&-number
+			margin-bottom: 8px
+			font-size: 16px
+			color: $blueDark
+//*********************first*section*************************
+.first
+	width: 100%
+	height: 800px
+	position: relative
+	@media screen and (max-width: 980px)
+		height: 600px
+	&__image
+		width: 100%
+		height: 100%
+		background-image: url('../img/BgImage.jpg')
+		background-attachment: fixed
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+	&__name
+		position: absolute
+		top: 50%
+		left: 20%
+		height: 100px
+		@media screen and (max-width: 1150px)
+			left: 10%
+		@media screen and (max-width: 680px)
+			left: 2%
+			padding: 0 15px
+			@media screen and (max-width: 380px)
+				top: 30%
+		h1
+			font-size: 80px
+			-webkit-text-stroke: 2px $red
+			color: transparent
+			@media screen and (max-width: 980px)
+				font-size: 50px
+
+//********************content***************************
+.content, .content__more
+	width: 100%
+	padding: 50px 20px
+	@include dflex
+	flex-direction: column
+	&__box
+		max-width: 1200px
+		width: 100%
+		@include dflex
+		flex-direction: row
+		padding: 10px
+		margin: 15px 0
+		&:hover, &:focus
+			transform: scale(1.1)
+		@media screen and (max-width: 980px)
+			flex-direction: column-reverse
+		&-conteiner
+			width: 400px
+			@media screen and (max-width: 460px)
+				width: 100%
+				padding: 0 20px
+			h2
+				font-size: 35px
+				color: $blueDark
+				margin-bottom: 30px
+			span
+				font-size: 16px
+			p
+				font-size: 20px
+				margin: 5px 0 30px 0
+				display: flex
+				align-items: center
+				justify-content: space-between
+			button
+				width: 250px
+				height: 50px
+				background-color: $violet
+				transition: .1s ease-in-out !important
+				-webkit-box-shadow: 4px 7px 11px -5px rgba(0,0,0,1)
+				-moz-box-shadow: 4px 7px 11px -5px rgba(0,0,0,1)
+				box-shadow: 4px 7px 11px -5px rgba(0,0,0,1)
+				&:hover, &:focus
+					background-color: #fff
+					border: 1px solid $blueDark
+					transition: .1s ease-in-out
+					a
+						color: $blueDark
+						svg
+							fill: $blueDark
+							transition: .1s ease-in-out
+				a
+					width: 100%
+					height: 100%
+					color: #fff
+					@include dflex
+					font-size: 22px
+					text-transform: uppercase
+					svg
+						fill: #fff
+						margin-right: 8px
+						transition: .1s ease-in-out
+		&-price
+			font-size: 35px !important
+			color: $red
+			-webkit-text-stroke: 0.5px #000
+			text-shadow: 1px 1px 5px black
+		&-image
+			width: 400px
+			height: 266px
+			margin: 0 15px
+			@media screen and (max-width: 460px)
+				width: 300px
+				height: 220px
+			img
+				width: 100%
+				height: 100%
+.open__all
+	width: 250px
+	height: 50px
+	display: flex
+	margin: 0 auto
+	background-color: $violet
+	transition: .1s ease-in-out !important
+	-webkit-box-shadow: 4px 7px 11px -5px rgba(0,0,0,1)
+	-moz-box-shadow: 4px 7px 11px -5px rgba(0,0,0,1)
+	box-shadow: 4px 7px 11px -5px rgba(0,0,0,1)
+	&:hover, &:focus
+		background-color: #fff
+		border: 1px solid $blueDark
+		transition: .1s ease-in-out
+		a
+			color: $blueDark
+			svg
+				fill: $blueDark
+				transition: .1s ease-in-out
+	a
+		width: 100%
+		height: 100%
+		color: #fff
+		@include dflex
+		font-size: 22px
+		text-transform: uppercase
+	svg
+		fill: #fff
+		margin-left: 8px
+		transition: .1s ease-in-out
+.content__more
+	padding: 10px 20px
+//*********************video**************************
+.video
+	width: 100%
+	padding: 30px 10px
+	@include dflex
+	flex-direction: column
+	h2
+		font-size: 50px
+		color: $blueDark
+		margin-bottom: 20px
+		@media screen and (max-width: 780px)
+			font-size: 26px
+	&__text
+		max-width: 780px
+		height: 150px
+		overflow: overlay
+		margin-top: 20px
+		font-size: 16px
+		color: $blueDark
+		line-height: 1.3
+iframe
+	max-width: 780px
+	width: 100%
+	height: 415px
+
+//*********************contacts**************************
+.contacts
+	width: 100%
+	height: 200px
+	background-color: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	h2
+		font-size: 50px
+		color: $blueDark
+		margin-bottom: 30px
+		@media screen and (max-width: 780px)
+			font-size: 26px
+	ul
+		max-width: 1200px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-direction: row
+		li
+			&:hover, &:focus
+				transform: rotate(360deg)
+				svg
+					fill: $red
+			svg
+				transform: scale(1.5)
+				fill: $blueDark
+
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************
+//***********************************************

@@ -1,0 +1,227 @@
+*
+	padding: 0
+	margin: 0
+	border: 0
+	transition: .7s ease-in-out
+	box-sizing: border-box
+*:before *:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+a:focus,a:active
+	outline: none
+nav,footer,header,aside
+	display: block
+html,body
+		height: 100%
+		width: 100%
+		font-size: 100%
+		line-height: 1
+		font-size: 14px
+		font-family: 'Raleway', sans-serif
+		-ms-text-size-adjust: 100%
+		-moz-text-size-adjust: 100%
+		-webkit-text-size-adjust: 100%
+		margin: 0 auto
+		outline: none
+input,button,textarea
+input::-ms-clear
+	display: none
+input
+	&::-webkit-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-moz-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&:-ms-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-webkit-inner-spin-button
+		-webkit-appearance: none
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+	&[type='number']
+		-moz-appearance: textfield
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
+button
+	cursor: pointer
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a,a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+	outline: none !important
+video:active, video:focus
+	outline: none !important
+ul li
+	list-style: none
+img
+h1,h2,h3,h4,h5,h6
+	font-size: inherit
+/*--------------------Start--Project----------------*/
+// ------------1 section--------------------
+
+.wrapper
+	max-width: 1900px
+	margin: 0 auto
+.header
+.logo
+	img
+		width: 100%
+.first
+	width: 800px
+	display: flex
+	align-items: center
+	flex-direction: column
+	margin: 80px auto
+	&__top
+		margin-bottom: 70px
+		&-name
+			h1
+				font-size: 34px
+				color: #0050AC
+				padding-bottom: 15px
+				font-weight: 100
+		&-line
+			width: 105%
+			height: 3px
+			background-image: linear-gradient(to right, #009ACF, #742F9D)
+			margin: 0 -15px
+	&__center
+		display: flex
+		flex-direction: row
+		&-left, &-right
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			a
+				width: 170px
+				height: 50px
+				background-image: linear-gradient(145deg, #9FEC5A, #5AAC62)
+				border-radius: 30px
+				color: #ffffff
+				font-weight: bold
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 0 20px
+				text-align: center
+				margin: 15px 50px
+				font-size: 15px
+				transition-delay: .5s
+				&:hover
+					background-image: linear-gradient(145deg, #FF5A67, #CA3B67)
+		&-img
+	&__down
+		width: 85%
+		margin-top: 65px
+		text-align: justify
+		span
+			color: #00BD81
+			font-size: 15px
+			line-height: 1.3
+
+// ------------2 section--------------------
+
+.two
+	display: flex
+	align-items: center
+	flex-direction: column
+	margin: 80px auto
+	background-color: #F6F6F6
+	&__top
+		img
+			margin: 85px 0 20px 0
+		h2
+			font-size: 34px
+			color: #0050AC
+			font-weight: 100
+			margin-bottom: 65px
+	&__down
+		display: flex
+		flex-direction: row
+		margin-bottom: 120px
+		&-left
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			margin-right: 30px
+		&-right
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+		&-button
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			a
+				width: 300px
+				height: 75px
+				background-image: linear-gradient(145deg, #9ED600, #60B00D, #89C800)
+				border-radius: 45px
+				color: #ffffff
+				font-weight: bold
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 0 20px
+				text-align: center
+				margin: 25px 0
+				font-size: 15px
+				font-weight: 100
+				span
+					padding: 0 25px 0 20px
+.button__img
+	width: 90px
+	height: 90px
+	border-radius: 50%
+	background-color: #DDDDDD
+	border: 3px	solid #89C800
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 -46px
+	z-index: 2
+
+
+// ------------3 section--------------------
+
+.three
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	margin-top: 190px
+	&__top
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		img
+			margin-bottom: 15px
+		h2
+			width: 670px
+			font-size: 34px
+			color: #0050AC
+			font-weight: 100
+			margin-bottom: 100px
+			text-align: center
+	&__down
+		display: flex
+		flex-direction: row
+		margin-bottom: 180px
+		&-left
+			margin-right: 55px
+		&-right

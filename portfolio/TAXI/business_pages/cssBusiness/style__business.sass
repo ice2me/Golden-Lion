@@ -1,0 +1,435 @@
+*
+	padding: 0
+	margin: 0
+	border: 0
+	transition: .5s ease-in-out
+	box-sizing: border-box
+*:before *:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+a:focus,a:active
+	outline: none
+nav,footer,header,aside
+	display: block
+html,body
+	height: 100vh
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	font-family: 'Raleway', sans-serif
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+input,button,textarea
+	font-family: inherit
+input::-ms-clear
+	display: none
+input
+	&::-webkit-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-moz-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&:-ms-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-webkit-inner-spin-button,
+		::-webkit-outer-spin-button
+		-webkit-appearance: none
+	&[type='number']
+		-moz-appearance: textfield
+button
+	cursor: pointer
+	text-decoration: none
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+	text-decoration: none
+a,a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+ul li
+	list-style: none
+img
+	vertical-align: top
+h1,h2,h3,h4,h5,h6
+	font-size: inherit
+	font-weight: inherit
+/*------------Start--Project----------------*/
+
+
+.container
+	max-width: 1600px
+	min-width: 450px
+	margin: 0 auto
+	background-color: #cacaca
+.header
+	background: url(../imgBusiness/bgbusiness.jpg)
+	background-repeat: no-repeat
+	position: relative
+	height: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__content
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		padding: 100px 0 100px 0
+	&__name
+		font-size: 70px
+		color: #FFF
+		position: relative
+		top: 50px
+		right: 3%
+	&__right
+		font-size: 40px
+		color: #FFF
+		position: relative
+		top: 32%
+		left: 10%
+		
+		@media (max-width: 1400px)
+			font-size: 35px
+			color: #FFF
+			top: 20px
+			left: 5%
+		@media (max-width: 1000px)
+			font-size: 32px
+			color: #FFF
+			top: 30px
+			left: 0%
+		@media (max-width: 700px)
+			font-size: 28px
+			color: #FFF
+			position: absolute
+			left: 30%
+			top: 32%
+			margin: 10px auto
+		@media (max-width: 600px)
+			font-size: 25px
+			color: #FFF
+			position: absolute
+			left: 30%
+			top: 32%
+			margin: 10px auto
+		@media (max-width: 580px)
+			font-size: 22px
+			color: #FFF
+			position: absolute
+			left: 30%
+			top: 32%
+			margin: 10px auto
+	&__tel
+		a
+			color: #FFF
+			padding-bottom: 20px
+	&__data
+		h3
+			position: relative
+			top: 10px
+			left: 70%
+			font-size: 35px
+			width: 125px
+			height: 45px
+			@media (max-width: 700px)
+				display: none
+	&__top
+		width: 700px
+		text-align: center
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		padding: 0 100px
+		@media (max-width: 1000px)
+			left: 30%
+			top: 10%
+		@media (max-width: 700px)
+			left: 10%
+			width: 420px
+			padding: 0 0 0 50px
+	&__top-name
+		h3
+			font-size: 25px
+			color: #EF9C17
+	&__top-text
+		font-size: 22px
+		padding: 5px
+		color: #EF9C17
+	&__forms
+		display: flex
+		flex-direction: column
+		align-items: center
+		input
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-align-content: center
+			align-content: center
+			padding: 10px
+		&-link
+			input
+				padding: 5px
+				margin: 3px
+				text-align: left
+				width: 400px
+				height: 50px
+				padding: 10px
+				border: 1px solid #EF9C17
+				-webkit-border-radius: 8px
+				border-radius: 8px
+				background-color: #cacaca
+				&placeholder
+					color: #EF9C17
+				@media (max-width: 600px)
+					width: 320px
+		&-button
+			padding: 10px 0 80px 0
+			button
+				width: 200px
+				height: 50px
+				text-align: center
+				border: 1px solid black
+				background-color: #ef9c17
+				font-size: 20px
+				font-weight: bold
+				-webkit-border-radius: 8px
+				border-radius: 8px
+				&:hover
+					background-color: #ffff
+#user__name, #user__company,
+#user__email, #user__tel
+	padding: 0 15px
+	font-size: 22px
+	color: #000000
+
+// --------------2--section-----------
+
+
+.content
+	height: 100%
+	display: flex
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
+	flex-direction: column
+	text-align: center
+	position: relative
+	@media (max-width: 1000px)
+		height: 100%
+	@media (max-width: 700px)
+		left: 20%
+		top: 20%
+		width: 450px
+	@media (max-width: 600px)
+		left: 10%
+		top: 10%
+		width: 420px
+	@media (max-width: 500px)
+		left: 7%
+		top: 10%
+		width: 400px
+	&__name
+		margin: 0 auto
+		padding: 0 10px
+		h1
+			text-align: center
+			padding: 50px 0
+			font-size: 40px
+			@media (max-width: 700px)
+				font-size: 30px
+				width: 400px
+				text-align: center
+	&__top, &__down
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-justify-content: center
+		justify-content: center
+		padding: 60px 0
+		@media (max-width: 1000px)
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			height: 100%
+			padding: 0
+		@media (max-width: 700px)
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			height: 100%
+			padding: 0
+		&-peronal, &-order,&-pay, &-messenger, &-support
+			width: 300px
+			margin: 0 25px
+			padding: 0px 10px 10px 10px
+			@media (max-width: 1000px)
+				margin: 15px auto
+				text-align: center
+			@media (max-width: 700px)
+				margin: 15px auto
+				text-align: center
+			img
+			h2
+				font-size: 25px
+				padding: 10px
+				font-weight: bold
+				@media (max-width: 1000px)
+					font-size: 20px
+				span
+					font-size: 20px
+					width: 90%
+					padding: 10px
+
+
+
+// ------------------------3---section------------
+
+.forms
+	background-image: url(../imgBusiness/bg3section.png)
+	background-repeat: no-repeat
+	-webkit-background-size: 100%
+	-o-background-size: 100%
+	background-size: 100%
+	height: 100%
+	width: 100%
+	@media (max-width: 1300px)
+		background-size: 190%
+		height: 100%
+	@media (max-width: 1200px)
+		background-size: 190%
+		height: 100%
+	@media (max-width: 1100px)
+		background-size: 190%
+		height: 100%
+	@media (max-width: 1000px)
+		background-size: 190%
+		height: 100%
+	@media (max-width: 730px)
+		background-size: 200%
+		height: 100%
+	@media (max-width: 625px)
+		background-size: 210%
+		height: 100%
+	@media (max-width: 500px)
+		background-size: 220%
+		height: 100%
+	&__name
+		margin: 0 auto
+		padding: 120px 0 30px 0
+		width: 85%
+		@media (max-width: 700px)
+			padding: 30px 0
+		h2
+		font-size: 40px
+		text-align: center
+		color: #090f0f
+		@media (max-width: 700px)
+			font-size: 25px
+			text-align: center
+			color: #090f0f
+	&__box
+		display: flex
+		flex-direction: column
+		align-items: center
+		@media (max-width: 700px)
+			width: 90%
+		input
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-align-content: center
+			align-content: center
+			padding: 10px
+	&__box-link
+		padding: 10px
+		@media (max-width: 700px)
+			width: 80%
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-items: center
+		@media (max-width: 625px)
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-items: center
+		input
+			margin: 8px
+			text-align: left
+			width: 600px
+			height: 50px
+			padding: 10px
+			border: 1px solid #EF9C17
+			-webkit-border-radius: 8px
+			border-radius: 8px
+			background-color: #cacaca
+			&placeholder
+				color: #EF9C17
+			@media (max-width: 700px)
+				width: 100%
+	&__box-button
+		padding: 10px
+		button
+			width: 200px
+			height: 50px
+			text-align: center
+			border: 1px solid black
+			background-color: #ef9c17
+			font-size: 20px
+			font-weight: bold
+			-webkit-border-radius: 8px
+			border-radius: 8px
+			&:hover
+				background-color: #ffff
+	&__social
+		padding: 50px 10px 50px 0
+		margin: 0 auto
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-around
+		-webkit-align-items: center
+		align-items: center
+		@media (max-width: 700px)
+			flex-direction: column
+		&-left
+			display: flex
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+			h3
+				font-size: 20px
+				padding: 0 30px 0 0
+				color: #EF9C17 
+			img
+				padding: 0 12px 0 0
+		&-right
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+
+
+
+
+
+
+
+

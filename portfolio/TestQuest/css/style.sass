@@ -1,0 +1,673 @@
+// @media screen and (max-width: 480px)
+*
+	padding: 0
+	margin: 0
+	border: 0
+	transition: .7s ease-in-out
+	box-sizing: border-box
+*:before *:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+a:focus,a:active
+	outline: none
+nav,footer,header,aside
+	display: block
+html,body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	font-family: 'Raleway', sans-serif
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+	margin: 0 auto
+	outline: none
+input,button,textarea
+
+input::-ms-clear
+	display: none
+input
+	&::-webkit-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-moz-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&:-ms-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-webkit-inner-spin-button
+		-webkit-appearance: none
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+	&[type='number']
+		-moz-appearance: textfield
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
+button
+	cursor: pointer
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a,a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+	outline: none !important
+video:active, video:focus
+	outline: none !important
+ul li
+	list-style: none
+img
+
+h1,h2,h3,h4,h5,h6
+	font-size: inherit
+// font-family: 'Rubik Mono One', sans-serif
+$rub: 'Rubik Mono One'
+/*----------------------------------------Start--Project-----------------------------------------*/
+
+
+.all__container
+	max-width: 1920px
+	margin: 0 auto
+	height: 100%
+.top
+	display: flex
+	-webkit-justify-content: space-around
+	justify-content: space-around
+	-webkit-align-items: center
+	align-items: center
+	position: relative
+	@media screen and (max-width: 850px)
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+	&__logo
+		a
+		img
+			position: absolute
+			top: 30px
+			left: 370px
+			@media screen and (max-width: 1600px)
+				left: 150px
+			@media screen and (max-width: 1300px)
+				left: 50px
+	&__nav
+		ul
+			display: flex
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+			-webkit-justify-content: center
+			justify-content: center
+			position: absolute
+			top: 45px
+			right: 375px
+			@media screen and (max-width: 1600px)
+				right: 120px
+			@media screen and (max-width: 1300px)
+				right: 50px
+			@media screen and (max-width: 850px)
+				right: 10px
+				display: flex
+				-webkit-flex-direction: column
+				-ms-flex-direction: column
+				flex-direction: column
+			@media screen and (max-width: 450px)
+				top: 100px
+		li
+			padding-right: 70px
+			@media screen and (max-width: 850px)
+				padding-bottom: 15px
+		a
+			font-weight: bold
+			color: #000
+
+// -----------------------------------------------2section------------------------------------------------------
+
+.rizor
+	width: 100%
+	margin: 0 auto
+	position: relative
+	@media screen and (max-width: 1800px)
+		zoom: 0.9
+	@media screen and (max-width: 1500px)
+		zoom: 0.8
+	@media screen and (max-width: 1200px)
+		zoom: 0.7
+	@media screen and (max-width: 1000px)
+		zoom: 0.6
+		top: 130px
+	&__content
+		width: 100%
+		margin: 0 auto
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		&-imgs
+			position: relative
+			top: 100px
+			left: 0
+		&-foto
+			position: absolute
+			top: 130px
+			right: 0
+			@media screen and (max-width: 900px)
+				top: 580px
+				left: 0
+			img
+				@media screen and (max-width: 900px)
+					width: 100%
+		&-name
+			display: flex
+			-webkit-align-items: flex-start
+			align-items: flex-start
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			position: absolute
+			top: 300px
+			left: 377px
+			@media screen and (max-width: 1800px)
+				left: 50px
+			@media screen and (max-width: 900px)
+				top: 100px
+			@media screen and (max-width: 450px)
+				top: 180px
+			h1
+				font-size: 70px
+				font-family: $rub
+				letter-spacing: 14px
+				line-height: 1.2
+				padding-bottom: 20px
+				@media screen and (max-width: 450px)
+					font-size: 50px
+					letter-spacing: 10px
+					line-height: 1
+			span
+				width: 325px
+				font-size: 15px
+				font-weight: bold
+				letter-spacing: 1.5px
+				line-height: 1.5
+			img
+				position: absolute
+				top: 350px
+				left: 28px
+				@media screen and (max-width: 450px)
+					top: 280px
+		&-play
+			display: flex
+			position: absolute
+			top: 185px
+			left: 750px
+			@media screen and (max-width: 1800px)
+				left: 725px
+			@media screen and (max-width: 1600px)
+				left: 575px
+			@media screen and (max-width: 1400px)
+				left: 425px
+			@media screen and (max-width: 1200px)
+				left: 375px
+			@media screen and (max-width: 900px)
+				top: 500px
+				left: 50%
+				-webkit-transform: rotate(90deg)
+				-moz-transform: rotate(90deg)
+				-ms-transform: rotate(90deg)
+				-o-transform: rotate(90deg)
+				transform: rotate(90deg)
+			button
+				background-color: transparent
+			span
+				p
+					width: 80px
+					font-size: 12px
+					-webkit-transform: rotate(-90deg)
+					-moz-transform: rotate(-90deg)
+					-ms-transform: rotate(-90deg)
+					-o-transform: rotate(-90deg)
+					transform: rotate(-90deg)
+					text-align: left
+					font-weight: bold
+					letter-spacing: 1.5px
+				img
+					position: absolute
+					top: 60px
+					left: 15px
+			img
+				position: absolute
+				top: -16px
+				left: 60px
+
+// ------------------------------------------3 section---------------------------------------------
+
+.advantages
+	width: 100%
+	padding: 200px 0
+	margin: 0 auto
+	@media screen and (max-width: 900px)
+		margin-top: 50px
+	@media screen and (max-width: 650px)
+		margin-top: -20px
+	@media screen and (max-width: 550px)
+		margin-top: -80px
+	@media screen and (max-width: 450px)
+		margin-top: -170px
+	&__content
+		width: 100%
+		padding: 0
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		@media screen and (max-width: 1800px)
+			zoom: 0.9
+		@media screen and (max-width: 1500px)
+			zoom: 0.8
+		@media screen and (max-width: 1200px)
+			zoom: 0.7
+		@media screen and (max-width: 1000px)
+			zoom: 0.6
+		@media screen and (max-width: 900px)
+			position: relative
+			top: 580px
+			display: flex
+		@media screen and (max-width: 760px)
+			top: 430px
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+		&-button
+			position: relative
+			top: 0
+			left: 0
+			display: flex
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
+			img
+				@media screen and (max-width: 460px)
+					width: 100%
+			button
+				position: absolute
+				top: 335px
+				left: 328px
+				-webkit-border-radius: 50%
+				border-radius: 50%
+				border: 1px solid transparent
+				width: 90px
+				height: 90px
+				img
+					width: 60%
+					position: absolute
+					top: 18px
+					left: 20px
+	&__boxs
+		width: 100%
+		position: relative
+		top: 0
+		right: 0
+	&__block
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: flex-start
+		align-items: flex-start
+		-webkit-justify-content: center
+		justify-content: center
+		@media screen and (max-width: 900px)
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+		@media screen and (max-width: 760px)
+			display: flex
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+		&-link
+			padding: 100px 50px 50px 100px
+			a
+				font-size: 15px
+				color: #3a30f8
+		&-name
+			width: 220px
+			padding-top: 50px
+			h2
+				font-size: 35px
+				color: #000
+				padding-bottom: 45px
+		&-text
+			p
+				font-size: 13px
+				color: #000
+				padding-bottom: 40px
+		&-line
+			display: flex
+			-webkit-align-items: baseline
+			align-items: baseline
+			p
+				font-size: 13px
+				color: #000
+		&-line1
+			width: 30px
+			height: 5px
+			background-color: #000
+			margin-right: 15px
+		&-line2
+			width: 45px
+			height: 5px
+			background-color: #000
+			margin-right: 15px
+		&-line3
+			width: 65px
+			height: 5px
+			background-color: #000
+			margin-right: 15px
+	&__color
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		position: relative
+		z-index: 2
+		@media screen and (max-width: 1800px)
+			top: -250px
+			left: 20px
+		@media screen and (max-width: 900px)
+			top: 120px
+			left: -320px
+		@media screen and (max-width: 760px)
+			top: -240px
+		@media screen and (max-width: 650px)
+			top: 100px
+		&-box
+		&-name
+			position: absolute
+			left: 450px
+			top: -135px
+			h2
+				font-size: 35px
+				width: 250px
+				padding-bottom: 40px
+			p
+				font-size: 15px
+				width: 250px
+		&-bg
+			position: absolute
+			top: -120px
+			left: 350px
+		&-paint
+			position: absolute
+			top: 45px
+			left: 470px
+		&-font
+			position: absolute
+			left: 60%
+			top: -600px
+			@media screen and (max-width: 1800px)
+				-webkit-transform: rotate(90deg)
+				-moz-transform: rotate(90deg)
+				-ms-transform: rotate(90deg)
+				-o-transform: rotate(90deg)
+				transform: rotate(90deg)
+				top: 70px
+				left: -165px
+			@media screen and (max-width: 900px)
+				display: none
+		&-line
+			position: absolute
+			right: 8%
+			bottom: -250px
+			@media screen and (max-width: 1800px)
+				right: 8%
+				bottom: -450px
+			@media screen and (max-width: 900px)
+				display: none
+
+
+// -----------------------------4 section----------------------------------
+
+
+.mode
+	width: 100%
+	margin: 0 auto
+	display: flex
+	padding-top: 200px
+	&__left
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		position: relative
+		&-bg
+			@media screen and (max-width: 650px)
+				zoom: 0.7
+		&-content
+			width: 370px
+			position: absolute
+			top: 21%
+			left: 85%
+			@media screen and (max-width: 1800px)
+				top: 21%
+				left: 10%
+				z-index: 2
+			@media screen and (max-width: 1200px)
+				top: 30%
+				z-index: 2
+				left: 50%
+				background-color: rgba(65, 105, 225, 0.6)
+			@media screen and (max-width: 760px)
+				top: 0
+				background-color: rgba(65, 105, 225, 0.0)
+			@media screen and (max-width: 650px)
+				top: 200px
+				left: 20px
+		&-name
+			width: 300px
+			h2
+				font-size: 30px
+				font-family: $rub
+				padding-bottom: 50px
+		&-text
+				font-size: 14px
+				p
+					line-height: 1.5
+					span
+						font-weight: 900
+		&-line
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			padding-top: 20px
+			p
+				padding-left: 5px
+		&-liner
+			width: 30px
+			height: 2px
+			background-color: #000
+		&-speed
+			display: flex
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
+			padding-top: 95px
+.speed-left
+	width: 120px
+	margin-right: 85px
+	h3
+		font-size: 45px
+		color: #3A30F8
+		font-weight: 900
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-align-items: flex-end
+		align-items: flex-end
+		padding-bottom: 25px
+	p
+		font-size: 18px
+		color: #3A30F8
+		font-weight: 900
+	span
+		color: #747474
+.speed-right
+	width: 100px
+	h3
+		font-size: 45px
+		color: #3A30F8
+		font-weight: 900
+		padding-bottom: 20px
+	span
+		color: #747474
+.mode__right
+	position: relative
+	top: 40px
+	right: 0
+	@media screen and (max-width: 1800px)
+		left: -300px
+	@media screen and (max-width: 1600px)
+		left: -600px
+	@media screen and (max-width: 1400px)
+		left: -800px
+
+	&-content
+		img
+			position: absolute
+			top: 50px
+			left: 100px
+			@media screen and (max-width: 760px)
+				zoom: 0.7
+				top: 65%
+			@media screen and (max-width: 650px)
+				zoom: 0.6
+	&-play
+		position: absolute
+		top: 71%
+		left: 270px
+		z-index: 10
+		@media screen and (max-width: 1500px)
+			top: 45%
+			left: 800px
+		@media screen and (max-width: 760px)
+			left: 600px
+		@media screen and (max-width: 650px)
+			top: 570px
+		img
+			position: absolute
+		p
+			font-size: 10px
+			width: 80px
+			font-weight: bold
+			text-align: left
+			-webkit-transform: rotate(-90deg)
+			-moz-transform: rotate(-90deg)
+			-ms-transform: rotate(-90deg)
+			-o-transform: rotate(-90deg)
+			transform: rotate(-90deg)
+			position: absolute
+			top: 25px
+			left: -60px
+
+// --------------------------5 section ----------------------------------
+
+.footer__container
+	max-width: 1920px
+	background-color: #3A30F8
+	display: flex
+	-webkit-flex-direction: row
+	-ms-flex-direction: row
+	flex-direction: row
+	margin-top: 180px
+	position: relative
+	@media sceen and (max-width: 1200px)
+		margin-top: 50px
+	@media screen and (max-width: 760px)
+		margin-top: 280px
+	&-bg
+		img
+			width: 100%
+	&-content
+		width: 320px
+		padding: 100px 55px 0 0
+		color: #FFF
+		line-height: 2
+		position: absolute
+		left: 19%
+		z-index: 2
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: center
+		align-items: center
+		@media screen and (max-width: 760px)
+			top: 32%
+	&-name
+		h4
+			font-size: 20px
+			padding-bottom: 100px
+			letter-spacing: 2px 
+			@media screen and (max-width: 760px)
+				padding-bottom: 20px
+	&-text
+		p
+			font-size: 14px
+			padding-bottom: 100px
+			letter-spacing: 1.2px
+			@media screen and (max-width: 760px)
+				padding-bottom: 20px
+	&-button
+		width: 275px
+		height: 55px
+		background-color: #FFF
+		-webkit-border-radius: 70px
+		border-radius: 70px
+		display: flex
+		-webkit-justify-content: center
+		justify-content: center
+		button
+			background-color: #FFF 
+		a
+			font-size: 15px
+			color: #3A30F8
+			font-weight: bold
+	&-foto
+		position: absolute
+		top: -60px
+		right: 0
+		@media screen and (max-width: 1200px)
+			top: 0
+		img
+			width: 100%
+.bottom
+	width: 100%
+	height: 30px
+	background-color: #292929
+	display: flex
+	-webkit-justify-content: center
+	justify-content: center
+	-webkit-align-items: center
+	align-items: center
+	p
+		font-size: 9px
+		color: #605F5F
