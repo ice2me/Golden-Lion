@@ -1,0 +1,660 @@
+*
+	padding: 0
+	margin: 0
+	border: 0
+	transition: .7s ease-in-out
+	box-sizing: border-box
+*:before *:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+a:focus,a:active
+	outline: none
+nav,footer,header,aside
+	display: block
+html,body
+		height: 100%
+		width: 100%
+		line-height: 1
+		font-size: 14px
+		font-family: 'Raleway', sans-serif
+		-ms-text-size-adjust: 100%
+		-moz-text-size-adjust: 100%
+		-webkit-text-size-adjust: 100%
+		margin: 0 auto
+		outline: none
+		animation: all ease 1s
+		background-color: #919191
+input::-ms-clear
+	display: none
+input
+	outline: 0
+	outline-offset: 0
+	&::-webkit-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-moz-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&:-ms-input-placeholder
+		color: grey
+		padding: 10px
+		text-overflow: ellipsis
+	&::-webkit-inner-spin-button
+		-webkit-appearance: none
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+	&[type='number']
+		-moz-appearance: textfield
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
+button
+	cursor: pointer
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a,a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+	outline: none !important
+video:active, video:focus
+	outline: none !important
+ul li
+	list-style: none
+h1,h2,h3,h4,h5,h6
+	font-size: inherit
+
+$green: #ADC62C
+$bg_button: #E2FE52
+$bg_button-grey: #383838
+$white_fonts: #FFFFFF
+$grey_fonts: #838383
+$bg_burger: #111111
+$bg_popap: #000000
+
+@mixin fontRoboto
+	font-family: 'Roboto', sans-serif
+@mixin fontName
+	font-family: 'Source Serif Pro', serif
+
+@mixin dflex
+	display: flex
+	align-items: center
+	justify-content: center
+
+//************start************
+.wrapper
+	width: 100%
+	margin: 0 auto
+	position: relative
+	overflow: hidden
+//************burger************
+.burger__menu
+	width: 400px
+	background-color: #000
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	z-index: 999
+	margin-right: -400px
+	&-button
+		position: relative
+		left: 46px
+		top: 48px
+		cursor: pointer
+		&:hover
+			path
+				fill: $green
+	&-nav
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-direction: column
+	&-logo
+		margin-top: 123px
+	&-links
+		height: 354px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-direction: column
+		margin-top: 119px
+	&-link
+		a
+			color: #fff
+			text-align: center
+			@include fontRoboto
+			font-size: 16px
+			line-height: 19px
+			font-weight: normal
+			&:hover
+				color: $green
+	&-socials
+		margin-top: 205px
+		@include dflex
+		flex-direction: column
+	&-social
+		margin-top: 26px
+		&:first-child
+			margin-top: 0
+		a
+			@include fontRoboto
+			font-size: 14px
+			line-height: 16px
+			text-align: center
+			color: #787878
+			font-weight: normal
+			text-align: center
+			&:hover
+				color: $green
+.scroll-disallowed
+	overflow: hidden
+//************pop-up************
+.popup
+	width: 100%
+	height: 100vh
+	background-color: rgba(9, 9, 9, 0.5)
+	@include dflex
+	display: none
+	position: fixed
+	z-index: 149
+	&__box
+		width: 662px
+		height: 522px
+		background-color: #000
+		@include dflex
+		flex-direction: column
+		position: fixed
+		z-index: 150
+	&__button
+		position: absolute
+		top: 43px
+		right: 43px
+		cursor: pointer
+		&:hover
+			path
+				fill: $green
+	&__container
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-name, &-phone
+			width: 383px
+			height: 56px
+			background-color: #FFFFFF
+			border-radius: 48.5px
+			@include dflex
+			flex-direction: column
+			margin-bottom: 22px
+			padding-left: 20px
+			cursor: pointer
+			@include fontRoboto
+			color: #000
+			font-size: 16px
+			&:hover, &:focus, &:active
+				border: 2px solid $green
+		&-radio
+			display: flex
+			margin-top: 20px
+			margin-bottom: 50px
+			width: 100%
+			align-items: baseline
+			justify-content: space-around
+			margin-right: 20px
+		&-title
+			@include fontRoboto
+			font-size: 14px
+			line-height: 16px
+			color: #A7A7A7
+		&-label
+			display: block
+			position: relative
+			margin-bottom: 12px
+			cursor: pointer
+			font-size: 14px
+			-webkit-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			display: flex
+			flex-direction: row-reverse
+			color: #fff
+			&:hover input ~ .popup__container-checkmark
+				background-color: #222
+			input
+				position: absolute
+				opacity: 0
+				cursor: pointer
+				&:checked ~ .popup__container-checkmark
+					background-color: #000
+				&:checked ~ p
+					color: $green
+				&:checked ~ .popup__container-checkmark:after
+					display: block
+		&-checkmark
+			position: absolute
+			top: -3px
+			left: 50px
+			height: 20px
+			width: 20px
+			background-color: #000
+			border: 1px solid #fff
+			border-radius: 50%
+			&:after
+				content: ""
+				position: absolute
+				display: none
+		&-label .popup__container-checkmark:after
+			top: 4px
+			left: 4px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: $green
+		&-buttons
+			width: 100%
+			display: flex
+			justify-content: space-between
+		&-download
+			width: 195px
+			height: 84px
+			background-color: #2E2E2E
+			border-radius: 42px
+			@include dflex
+			&:hover, &:focus
+				border: 1px solid $green
+				svg
+					path
+						fill: $green
+			p
+				width: 74px
+				height: 32px
+				@include fontRoboto
+				font-style: normal
+				font-weight: normal
+				font-size: 14px
+				line-height: 16px
+				color: #FFFFFF
+				text-align: left
+				margin-right: 22px
+		&-send
+			width: 164px
+			height: 84px
+			border: 1px solid $green
+			background-color: transparent
+			border-radius: 42px
+			color: #fff
+			@include fontRoboto
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			cursor: pointer
+			&:hover, &:focus
+				border: 2px solid $green
+//************top-menu************
+.top-menu
+	max-width: 1920px
+	width: 100%
+	position: fixed
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0
+	z-index: 99
+	&__logo
+		width: 120px
+		height: 120px
+		background-image: url(../img/logo.png)
+		background-size: contain
+		background-repeat: no-repeat
+	&__links
+		display: flex
+		align-items: center
+	&__link
+		margin-right: 88px
+		a
+			p
+				color: #fff
+				@include fontRoboto
+				font-size: 14px
+				line-height: 16px
+				&:hover
+					color: $bg_button
+					transform: scale3d(1.2, 1.2, 1.2)
+			svg
+				&:hover
+					color: $bg_button
+					transform: scale3d(1.2, 1.2, 1.2)
+					circle
+						stroke: $green
+				circle
+					stroke: #fff
+		&:last-child
+			margin-right: 41px
+.short
+	background-image: url(../img/logo-short.png) !important
+	width: 80px
+	height: 80px
+//************first-screen************
+.first-screen
+	width: 100%
+	height: 975px
+	background-image: url(../img/screen-first.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: #222
+	position: relative
+	&__left
+		&-grape__little
+			position: absolute
+			top: 325px
+			left: 345px
+		&-grape__large
+			position: absolute
+			top: 644px
+			left: 0
+			z-index: 5
+	&__center
+		width: 100%
+		display: flex
+		justify-content: center
+		&-grape
+			position: absolute
+			top: 174px
+			margin: auto
+		&-bottle
+			position: absolute
+			top: 380px
+			margin: auto
+			margin-left: 40px
+			z-index: 5
+		&-slider
+			z-index: 10
+			width: 100%
+			height: 900px
+			@include dflex
+			flex-direction: column
+			position: relative
+			&__content
+				@include dflex
+				flex-direction: column
+				position: absolute
+				display: none
+				h1
+					font-size: 109px
+					line-height: 109px
+					@include fontName
+					color: #fff
+					font-weight: lighter
+					text-align: center
+					letter-spacing: -5px
+					z-index: 2
+				p
+					width: 558px
+					height: 78px
+					font-weight: 500
+					font-size: 14px
+					line-height: 26px
+					text-align: center
+					color: #D3D3D3
+					@include fontRoboto
+					z-index: 2
+				img
+					width: 100%
+					position: absolute
+			&__control
+				display: flex
+				position: absolute
+				bottom: 120px
+				justify-content: space-between
+				align-items: center
+				padding: 0 135px
+				width: 100%
+			&__number
+				display: flex
+				align-items: center
+				font-weight: normal
+				font-size: 38px
+				@include fontName
+				color: #818181
+			&__slash
+				font-size: 68px
+				color: #818181
+			&__action
+				font-size: 68px
+				color: $green
+			&__buttons
+				button
+					background-color: transparent
+	&__right
+		&-grape__big
+			position: absolute
+			top: 187px
+			right: 0
+		&-grape__small
+			position: absolute
+			top: 573px
+			right: 431px
+.active
+	display: flex
+//************two-screen************
+.two-screen
+	width: 100%
+	height: 1494px
+	background-image: url(../img/screen-two.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: #222
+	position: relative
+	&__left
+		&-large
+			position: absolute
+			top: 334px
+			left: 0
+		&-small
+			position: absolute
+			bottom: 152px
+			left: 240px
+	&__center
+		width: 100%
+		height: 100%
+		@include dflex
+		flex-direction: column
+		&-top
+			position: absolute
+			top: -30px
+			left: -90px
+		&-bottom
+			position: absolute
+			bottom: -30px
+			right: -90px
+		&-circle
+			width: 579px
+			height: 579px
+			border-radius: 50%
+			border: 1px solid $green
+			@include dflex
+			position: relative
+			z-index: 2
+			margin-top: 400px
+			&__black
+				width: 307px
+				height: 307px
+				background-color: rgba(0,0,0,0.5)
+				border-radius: 50%
+				@include dflex
+				p
+					color: #E3FF51
+					font-size: 110px
+					@include fontName
+					cursor: default
+			&__text
+				width: 540px
+				height: 90px
+				font-weight: 300
+				font-size: 18px
+				line-height: 30px
+				@include fontRoboto
+				position: absolute
+				color: #fff
+				font-style: italic
+				bottom: 320px
+				z-index: 5
+				text-align: center
+				cursor: default
+				a
+					color: #E3FF51
+					border-bottom: 1px solid #e3ff51
+	&__right
+		&-large
+			position: absolute
+			top: 287px
+			right: 0
+		&-small
+			position: absolute
+			top: 721px
+			right: 465px
+//************three-screen************
+.three-screen
+	width: 100%
+	height: 957px
+	background-image: url(../img/screen-three.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: #222
+	position: relative
+	top: -1px
+	&__left
+		position: absolute
+		top: 476px
+		left: 0
+	&__center
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-direction: column
+		padding-bottom: 81px
+		&-image
+		&-text
+			cursor: default
+			h2
+				font-size: 86px
+				line-height: 86px
+				color: $green
+				@include fontName
+				text-align: center
+			p
+				width: 876px
+				height: 90px
+				font-style: italic
+				font-weight: 300
+				font-size: 18px
+				line-height: 30px
+				@include fontRoboto
+				text-align: center
+				color: #fff
+		&-button
+			width: 172px
+			height: 77px
+			border: 1px solid $green
+			border-radius: 38.5px
+			&:hover
+				background-image: linear-gradient(360deg, #ADC62C 2.6%, #E2FE52 96.75%)
+				a
+					color: #000
+			a
+				width: 100%
+				height: 100%
+				@include dflex
+				font-weight: normal
+				font-size: 18px
+				line-height: 30px
+				@include fontRoboto
+				color: #fff
+	&__right
+		position: absolute
+		top: 355px
+		right: 0
+//************down************
+.down
+	width: 100%
+	height: 200px
+	background-color: #000
+	position: relative
+	top: -1px
+	z-index: 5
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+	padding: 0 63px 0 86px
+	&-left
+		p
+			font-size: 14px
+			line-height: 16px
+			color: #838383
+			cursor: default
+	&-center
+		display: flex
+		align-items: center
+		justify-content: space-around
+		width: auto
+		p
+			@include fontRoboto
+			font-weight: normal
+			font-size: 18px
+			line-height: 21px
+			color: #838383
+			margin-right: 51px
+			cursor: default
+		&-name, &-phone
+			width: 252px
+			height: 54px
+			background-color: transparent
+			border: 1px solid #4E4E4E
+			border-radius: 39px
+			@include dflex
+			padding-left: 20px
+			cursor: pointer
+			flex-direction: row
+			margin-right: 21px
+			color: #fff
+			font-size: 16px
+			@include fontRoboto
+			&:hover, &:focus, &:active
+				border: 1px solid $green
+		&-send
+			width: 144px
+			height: 54px
+			background-color: #383838
+			border-radius: 39px
+			font-size: 14px
+			line-height: 16px
+			color: #838383
+			cursor: pointer
+			@include fontRoboto
+			&:hover, &:focus
+				border: 1px solid $green
+				color: #fff
+	&-right
+		display: flex
+		cursor: default
+		&-color
+			@include fontRoboto
+			font-size: 14px
+			line-height: 16px
+			color: #838383
+			span
+				color: #ADC62C
+				margin-left: 3px
+//************start************
+//************start************
+//************start************

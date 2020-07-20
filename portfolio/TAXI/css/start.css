@@ -4,6 +4,7 @@
   margin: 0;
   border: 0;
   -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -117,7 +118,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
   height: 340px;
   background: url(../img/zUR.gif) center center no-repeat;
-  background-size: 300px;
+  -webkit-background-size: 300px 300px;
+          background-size: 300px;
   margin: -90px 0 0 -20px;
 }
 
@@ -135,15 +137,19 @@ body {
   left: 0;
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -178,12 +184,15 @@ body {
 .start__button {
   margin: 0 auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 .start__button button {
@@ -211,6 +220,7 @@ body {
 
 .start__button button p {
   -webkit-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
   transform: rotate(7deg);
 }
 
@@ -219,8 +229,10 @@ body {
   height: 40px;
   margin: 0 auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -247,6 +259,7 @@ body {
     height: 35px;
     font-size: 28px;
     -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
     top: 51%;
@@ -276,4 +289,3 @@ body {
   color: white;
   outline: none;
 }
-/*# sourceMappingURL=start.css.map */

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="burger__menu">
+				<div class="burger__menu-button">
+					<svg width="32" height="32" viewBox="0 0 32 32">
+						<path d="M8.69565 7.30435L24.6957 23.3044L23.3044 24.6957L7.30434 8.69566L8.69565 7.30435Z" fill="#616161"></path>
+						<path d="M24.6957 8.69566L8.69565 24.6957L7.30434 23.3044L23.3044 7.30435L24.6957 8.69566Z" fill="#616161"></path>
+					</svg>
+				</div>
+				<nav class="burger__menu-nav">
+					<div class="burger__menu-logo">
+						<a href="#">
+							<img src="./img/logo-burger.png" alt="">
+						</a>
+					</div>
+					<ul class="burger__menu-links">
+						<li class="burger__menu-link">
+							<a href="#">About us</a>
+						</li>
+						<li class="burger__menu-link">
+							<a href="#">History</a>
+						</li>
+						<li class="burger__menu-link">
+							<a href="#">Region & Wine</a>
+						</li>
+						<li class="burger__menu-link">
+							<a href="#">Our products</a>
+						</li>
+						<li class="burger__menu-link">
+							<a href="#">News</a>
+						</li>
+						<li class="burger__menu-link">
+							<a href="#">Contacts</a>
+						</li>
+					</ul>
+					<ul class="burger__menu-socials">
+						<li class="burger__menu-social">
+							<a href="#">Facebook</a>
+						</li>
+						<li class="burger__menu-social">
+							<a href="#">Instagram</a>
+						</li>
+						<li class="burger__menu-social">
+							<a href="#">Youtube</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="top-menu">
+				<div class="top-menu__logo"></div>
+				<ul class="top-menu__links">
+					<li class="top-menu__link">
+						<a href="#">
+							<p>About us</p>
+						</a>
+					</li>
+					<li class="top-menu__link">
+						<a href="#">
+							<p>History</p>
+						</a>
+					</li>
+					<li class="top-menu__link">
+						<a href="#" id="pop-up">
+							<p>Call me plz</p>
+						</a>
+					</li>
+					<li class="top-menu__link">
+						<a href="tel:+359876543210">
+							<p>+35 987 654 32 10</p>
+						</a>
+					</li>
+					<li class="top-menu__link" id="top-menu__button">
+						<a href="#">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none">
+								<circle cx="23" cy="23" r="22.5"></circle>
+								<path d="M16.1621 18.6487H29.2162V19.8919H16.1621V18.6487Z" fill="#ADC62C"></path>
+								<path d="M16.1621 22.3784H29.2162V23.6216H16.1621V22.3784Z" fill="#ADC62C"></path>
+								<path d="M16.1621 26.1081H29.2162V27.3514H16.1621V26.1081Z" fill="#ADC62C"></path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<div class="popup">
+					<div class="popup__box">
+						<div class="popup__button">
+							<svg width="32" height="32" viewBox="0 0 32 32">
+								<path d="M8.69565 7.30435L24.6957 23.3044L23.3044 24.6957L7.30434 8.69566L8.69565 7.30435Z" fill="#616161"></path>
+								<path d="M24.6957 8.69566L8.69565 24.6957L7.30434 23.3044L23.3044 7.30435L24.6957 8.69566Z" fill="#616161"></path>
+							</svg>
+						</div>
+							<form action="#" class="popup__container">
+								<input type="text" placeholder="Name" class="popup__container-name">
+								<input type="number" placeholder="Phone" class="popup__container-phone">
+								<div class="popup__container-radio">
+									<p class="popup__container-title">Your Age:</p>
+									<label for="age1" class="popup__container-label">
+										<input type="radio" id="age1" name="age" value="10" checked="checked"><p>10 - 20</p>
+										<span class="popup__container-checkmark"></span>
+									</label>
+									<label for="age2" class="popup__container-label">
+										<input type="radio" id="age2" name="age" value="20"><p>20 - 30</p>
+										<span class="popup__container-checkmark"></span>
+									</label>
+									<label for="age3" class="popup__container-label">
+										<input type="radio" id="age3" name="age" value="30"><p>30 - 40</p>
+										<span class="popup__container-checkmark"></span>
+									</label>
+								</div>
+								<div class="popup__container-buttons">
+								<button class="popup__container-download">
+									<p>Download your photo:</p>
+									<svg width="32" height="28" viewBox="0 0 32 28" fill="none">
+										<path d="M28.266 9.37071C28.266 9.32993 28.266 9.28915 28.266 9.24837C28.2684 4.14302 24.2104 0.00238005 19.2022 1.07562e-06C16.1561 -0.00149428 13.3127 1.55626 11.633 4.14676C8.27585 3.00437 4.64582 4.85263 3.52518 8.27496C3.30761 8.93951 3.19626 9.63532 3.19546 10.3359C3.19546 10.3821 3.19546 10.4289 3.19546 10.4756C0.914374 11.0797 -0.454438 13.4545 0.13812 15.7797C0.626196 17.6951 2.32099 19.0333 4.26229 19.0361H13.8286C14.1232 19.0361 14.362 18.7927 14.362 18.4924C14.362 18.1921 14.1232 17.9486 13.8286 17.9486H4.26229C2.49475 17.9379 1.0704 16.4686 1.08087 14.6667C1.09027 13.0513 2.25792 11.6862 3.82649 11.4566C4.10867 11.4179 4.3113 11.1601 4.28683 10.871C4.27243 10.6959 4.26229 10.5159 4.26229 10.3359C4.26609 7.32887 6.66047 4.8943 9.61026 4.89817C10.3098 4.89906 11.0023 5.0401 11.6485 5.31313C11.8934 5.41686 12.1759 5.32143 12.3115 5.0891C14.5616 1.21205 19.4687 -0.0715043 23.2719 2.2221C25.708 3.69122 27.2013 6.36301 27.1992 9.24837C27.1992 9.42835 27.1944 9.6029 27.18 9.77799C27.1552 10.0705 27.3628 10.3303 27.6489 10.3647C29.6954 10.6229 31.1492 12.5234 30.896 14.6097C30.6649 16.5131 29.0807 17.9441 27.1992 17.9486C27.0388 17.9488 26.8784 17.9392 26.7191 17.9198C26.6426 17.9102 26.5648 17.9201 26.4929 17.9486H18.1119C17.8173 17.9486 17.5785 18.1921 17.5785 18.4924C17.5785 18.7927 17.8173 19.0361 18.1119 19.0361H26.6658C26.7065 19.036 26.7471 19.0304 26.7863 19.0193C26.9213 19.0307 27.0594 19.0361 27.1992 19.0361C29.8506 19.0362 32 16.8452 32 14.1423C32.0001 11.8584 30.4504 9.87818 28.266 9.37071Z" fill="#A3A3A3"></path>
+										<path d="M20.1464 22.4581L16.5309 26.1437V10.8797C16.5309 10.5794 16.292 10.3359 15.9974 10.3359C15.7029 10.3359 15.464 10.5794 15.464 10.8797V26.1437L11.8485 22.4581C11.6366 22.2494 11.299 22.2554 11.0943 22.4714C10.8947 22.6821 10.8947 23.0162 11.0943 23.2269L15.6203 27.8408C15.8286 28.0531 16.1663 28.0531 16.3746 27.8408L20.9006 23.2269C21.1053 23.0109 21.0994 22.6667 20.8875 22.4581C20.6808 22.2545 20.3531 22.2545 20.1464 22.4581Z" fill="#A3A3A3"></path>
+									</svg>
+								</button>
+								<input type="button" value="Send" class="popup__container-send">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="first-screen">
+					<div class="first-screen__left">
+						<div class="first-screen__left-grape__little">
+							<img src="./img/single-grape-main-left.png" alt="">
+						</div>
+						<div class="first-screen__left-grape__large">
+							<img src="./img/single-grape-main-left-big.png" alt="">
+						</div>
+					</div>
+					<div class="first-screen__center">
+						<div class="first-screen__center-grape" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+							<img src="./img/intro-grape.png" alt="" width="599px" height="1014px">
+						</div>
+						<div class="first-screen__center-bottle"  data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+							<img src="./img/bottle.png" alt="" width="270px" height="1101px">
+						</div>
+						<div class="first-screen__center-slider">
+							<div class="first-screen__center-slider__content active" data-text="01">
+								<h1>Explore the world of wine</h1>
+								<p>Learn about the vast world of wine in a relaxed and fun atmosphere with other wine lovers and enthusiasts. Wine trails are suitable for those who are already in love with the world of wine and those who are just beginning to appreciate it.</p>
+								<img src="./img/rectangle-screen-first.png" alt="">
+							</div>
+							<div class="first-screen__center-slider__content" data-text="02">
+								<h1>Explore the world of wine111</h1>
+								<p>Learn about the vast world of wine in a relaxed and fun atmosphere with other wine lovers and enthusiasts. Wine trails are suitable for those who are already in love with the world of wine and those who are just beginning to appreciate it.</p>
+								<img src="./img/rectangle-screen-first.png" alt="">
+							</div>
+							<div class="first-screen__center-slider__content" data-text="03">
+								<h1>Explore the world of wine222</h1>
+								<p>Learn about the vast world of wine in a relaxed and fun atmosphere with other wine lovers and enthusiasts. Wine trails are suitable for those who are already in love with the world of wine and those who are just beginning to appreciate it.</p>
+								<img src="./img/rectangle-screen-first.png" alt="">
+							</div>
+							<div class="first-screen__center-slider__control">
+								<div class="first-screen__center-slider__number">
+									<p class="first-screen__center-slider__action">01</p>
+									<p class="first-screen__center-slider__slash">/</p>
+									<p>03</p>
+								</div>
+								<div class="first-screen__center-slider__buttons">
+									<button id="back">
+										<svg width="47" height="16" viewBox="0 0 47 16" fill="none">
+											<path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928936C7.68054 0.538411 7.04738 0.538411 6.65685 0.928936L0.292892 7.2929ZM47 7L1 7L1 9L47 9L47 7Z" fill="#818181"></path>
+										</svg>
+									</button>
+									<button id="next">
+										<svg width="133" height="16" viewBox="0 0 133 16" fill="none">
+											<path d="M132.707 8.70711C133.098 8.31658 133.098 7.68342 132.707 7.29289L126.343 0.928932C125.953 0.538408 125.319 0.538408 124.929 0.928932C124.538 1.31946 124.538 1.95262 124.929 2.34315L130.586 8L124.929 13.6569C124.538 14.0474 124.538 14.6805 124.929 15.0711C125.319 15.4616 125.953 15.4616 126.343 15.0711L132.707 8.70711ZM0 9H132V7H0V9Z" fill="#ADC62C"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="first-screen__right">
+						<div class="first-screen__right-grape__big">
+							<img src="./img/single-grape-main-right-big.png" alt="">
+						</div>
+						<div class="first-screen__right-grape__small">
+							<img src="./img/single-grape-screen-two-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="two-screen">
+					<div class="two-screen__left">
+						<div class="two-screen__left-large">
+							<img src="./img/intro-grape-screen-two-left.png" alt="" data-aos="fade-right"  data-aos-offset="500" data-aos-duration="1800">
+						</div>
+						<div class="two-screen__left-small">
+							<img src="./img/single-grape-screen-two-left.png" alt="">
+						</div>
+					</div>
+					<div class="two-screen__center">
+						<div class="two-screen__center-circle" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+							<div class="two-screen__center-top">
+								<img src="./img/kisspng-leaf-top.png" alt="">
+							</div>
+							<div class="two-screen__center-bottom">
+								<img src="./img/kisspng-leaf-bottom.png" alt="">
+							</div>
+							<div class="two-screen__center-circle__black">
+								<p>1901</p>
+							</div>
+						</div>
+						<p class="two-screen__center-circle__text"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Give the wine lover in your life a gift they will love. <a href="#">Wine trails</a> are a fun way of exploring the great food and wine venues we have in the city while making great memories. </p>
+					</div>
+					<div class="two-screen__right">
+						<div class="two-screen__right-large">
+							<img src="./img/intro-grape-screen-two.png" alt="" data-aos="fade-left"  data-aos-offset="500" data-aos-duration="2500">
+						</div>
+						<div class="two-screen__right-small">
+							<img src="./img/single-grape-screen-two-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="three-screen">
+					<div class="three-screen__left">
+						<img src="./img/glass-left.png" alt="" data-aos="zoom-in-left">
+					</div>
+					<div class="three-screen__center">
+						<div class="three-screen__center-image">
+							<img src="./img/group-grape-leaf-screen-three.png" alt="" data-aos="fade-down">
+						</div>
+						<div class="three-screen__center-text">
+							<h2>About region</h2>
+							<p>The climate and diversity of soils in the Stara Zagora region present great opportunities for viticulture and winemaking. Our winery benefits from fantastic geography and weather conditions that allow us to grow both exotic international grapes as well as local traditional grape varieties.</p>
+						</div>
+						<div class="three-screen__center-button" data-aos="fade-up">
+							<a href="#">Learn more</a>
+						</div>
+					</div>
+					<div class="three-screen__right">
+						<img src="./img/glass-right.png" alt="" data-aos="zoom-in-right">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="down">
+				<div class="down-left">
+					<p>® Winehis 2020 </p>
+				</div>
+				<form action="#" class="down-center">
+					<p>Follow us:</p>
+					<input type="text" placeholder="Name" class="down-center-name">
+					<input type="number" placeholder="Phone" class="down-center-phone">
+					<input type="button" value="Send" class="down-center-send">
+				</form>
+				<div class="down-right">
+					<p class="down-right-color">Development by <span>Mango.agency</span></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init()
+</script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   -webkit-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -123,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
   background-color: #000;
   -webkit-transition: 1.5s ease;
+  -o-transition: 1.5s ease;
   transition: 1.5s ease;
   z-index: 9998;
 }
@@ -138,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
@@ -152,7 +155,8 @@ h1, h2, h3, h4, h5, h6 {
 .dot {
   height: 10px;
   width: 10px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   position: absolute;
   top: 52%;
 }
@@ -201,11 +205,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -226,9 +233,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 30;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: rgba(2, 2, 2, 0.9);
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -255,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 41px;
   left: 41px;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
@@ -302,12 +312,14 @@ h1, h2, h3, h4, h5, h6 {
 .burger-menu_active .burger-menu__lines::before {
   top: 0;
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .burger-menu_active .burger-menu__lines::after {
   top: 0;
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -321,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -100%;
   left: 0;
   -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
   transition: 1.5s;
   font-size: 32px;
   text-decoration: none;
@@ -351,6 +364,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
   -webkit-transition: width .3s ease-in-out;
   -moz--transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
   transition: width .3s ease-in-out;
 }
 
@@ -361,8 +375,10 @@ h1, h2, h3, h4, h5, h6 {
 .burger-menu__nav li {
   padding: 15px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -385,15 +401,19 @@ h1, h2, h3, h4, h5, h6 {
 .top__menu {
   width: 90%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  -webkit-justify-content: space-between;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -414,8 +434,10 @@ h1, h2, h3, h4, h5, h6 {
 .top__menu-center {
   margin: 5px auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -448,17 +470,20 @@ h1, h2, h3, h4, h5, h6 {
 .top__menu-right a:hover {
   color: #fff;
   -webkit-transition: ease 0.2s lianer;
+  -o-transition: ease 0.2s lianer;
   transition: ease 0.2s lianer;
 }
 
 .titul {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 96vh;
   background-image: url(../img/BGleft.png);
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -469,15 +494,19 @@ h1, h2, h3, h4, h5, h6 {
 .titul__left {
   width: 50%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -494,6 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   background-color: #B8860B;
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -502,12 +532,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #B8860B;
   margin: 30px 0 20px 0;
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .titul__left-point {
   width: 15px;
   height: 15px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #353331;
   margin: 30px;
@@ -522,15 +554,19 @@ h1, h2, h3, h4, h5, h6 {
 .titul__center {
   width: 30%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  -webkit-align-items: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -539,6 +575,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
   .titul__center {
+    -webkit-align-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -554,6 +591,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .titul__center-button {
   border: 1px solid #fff;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   margin: 60px 0;
 }
@@ -566,11 +604,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 310px;
   height: 65px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -593,8 +634,10 @@ h1, h2, h3, h4, h5, h6 {
 .titul__center-mouse {
   width: 25px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -603,6 +646,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .titul__center-mouse p {
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   font-size: 14px;
   color: #B8860B;
@@ -615,6 +659,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../img/BGright.png);
   background-repeat: no-repeat;
   background-position: left;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 
@@ -629,12 +674,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
   z-index: 20;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
           flex-direction: column-reverse;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -655,6 +703,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .titul__right-share img:hover {
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -673,28 +722,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .share__social img {
   background-color: rgba(2, 2, 2, 0.9);
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
 .share__social img:hover {
   -webkit-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
   transform: rotate(15deg);
   background-color: rgba(2, 2, 2, 0.9);
+  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
 .furniture {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 120px auto;
@@ -704,13 +760,16 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .furniture {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
   }
@@ -730,14 +789,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 300px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
   -webkit-box-align: end;
+  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
@@ -750,9 +812,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .furniture__left-name {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 60px 50px 30px 0;
@@ -766,9 +830,11 @@ h1, h2, h3, h4, h5, h6 {
 .furniture__left-text {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   line-height: 1.5;
@@ -782,13 +848,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .furniture__left-button {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 38%;
@@ -831,7 +900,8 @@ h1, h2, h3, h4, h5, h6 {
 .furniture__right img {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   width: 100%;
 }
 
@@ -857,22 +927,27 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   background-color: #B8860B;
   -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-top: 50px;
 }
 
 .decor {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 120px auto;
@@ -882,13 +957,16 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .decor {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
   }
@@ -908,10 +986,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
   height: 300px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
@@ -931,9 +1011,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .decor__left-name {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 60px 0px 30px 31%;
@@ -954,9 +1036,11 @@ h1, h2, h3, h4, h5, h6 {
 .decor__left-text {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   line-height: 1.5;
@@ -977,13 +1061,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .decor__left-button {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-right: 37%;
@@ -1041,20 +1128,24 @@ h1, h2, h3, h4, h5, h6 {
 .decor__right img {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   width: 100%;
 }
 
 .quality {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -1087,28 +1178,35 @@ h1, h2, h3, h4, h5, h6 {
 .quality__promo {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .quality__promo-one, .quality__promo-two {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
@@ -1131,13 +1229,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .quality__promo-there {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
@@ -1165,8 +1266,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .quality__promo-play:hover {
   border: 3px solid #fff;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -webkit-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
           transform: rotate(9deg);
 }
 
@@ -1174,16 +1277,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 850px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background: transparent;
   position: relative;
   top: 0;
@@ -1201,13 +1308,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 80%;
   border: 2px solid #B8860B;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 50px auto;
@@ -1285,7 +1395,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
   height: 60px;
   border: 1px solid #fff;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
 }
 
 @media screen and (max-width: 468px) {
@@ -1296,23 +1407,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .player__content-button:hover {
   border: 1px solid #B8860B;
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
 }
 
 .player__content-button button {
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   background-color: transparent;
@@ -1333,6 +1449,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   right: 10%;
   -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
@@ -1345,12 +1462,15 @@ h1, h2, h3, h4, h5, h6 {
 .about {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 120px auto;
@@ -1360,6 +1480,7 @@ h1, h2, h3, h4, h5, h6 {
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin: 50px auto;
@@ -1380,25 +1501,31 @@ h1, h2, h3, h4, h5, h6 {
 .about__image img {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
 .about__content {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 5%;
@@ -1407,6 +1534,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .about__content {
     -webkit-box-align: center;
+    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 3%;
@@ -1439,13 +1567,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .about__content-button {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   width: 135px;
@@ -1471,17 +1602,21 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   color: #fff;
   margin: 0 auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .down__left {
@@ -1506,4 +1641,3 @@ h1, h2, h3, h4, h5, h6 {
 .down__right {
   padding: 0 25px;
 }
-/*# sourceMappingURL=style.css.map */

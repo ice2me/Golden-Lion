@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   -webkit-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -116,10 +117,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .top {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -129,8 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 850px) {
   .top {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -158,12 +164,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .top__nav ul {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -188,8 +197,10 @@ h1, h2, h3, h4, h5, h6 {
   .top__nav ul {
     right: 10px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -253,8 +264,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -288,11 +301,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .rizor__content-name {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -358,6 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .rizor__content-play {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
@@ -394,6 +411,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 500px;
     left: 50%;
     -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
   }
 }
@@ -406,6 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 80px;
   font-size: 12px;
   -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   text-align: left;
   font-weight: bold;
@@ -458,8 +477,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -495,6 +516,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: 580px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -504,8 +526,10 @@ h1, h2, h3, h4, h5, h6 {
   .advantages__content {
     top: 430px;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -518,11 +542,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -538,6 +565,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 335px;
   left: 328px;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 1px solid transparent;
   width: 90px;
@@ -560,15 +588,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .advantages__block {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  -webkit-align-items: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -577,8 +609,10 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 900px) {
   .advantages__block {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -589,8 +623,10 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 760px) {
   .advantages__block {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -626,8 +662,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .advantages__block-line {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: baseline;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -661,8 +699,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .advantages__color {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -735,6 +775,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1800px) {
   .advantages__color-font {
     -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 70px;
     left: -165px;
@@ -770,6 +811,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-top: 200px;
@@ -777,8 +819,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .mode__left {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -854,8 +898,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .mode__left-line {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -874,15 +920,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .mode__left-speed {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -899,12 +949,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #3A30F8;
   font-weight: 900;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  -webkit-align-items: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1015,6 +1068,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-align: left;
   -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: absolute;
   top: 25px;
@@ -1025,8 +1079,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1920px;
   background-color: #3A30F8;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1060,12 +1116,15 @@ h1, h2, h3, h4, h5, h6 {
   left: 19%;
   z-index: 2;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1105,10 +1164,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 275px;
   height: 55px;
   background-color: #FFF;
+  -webkit-border-radius: 70px;
   border-radius: 70px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1145,11 +1207,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 30px;
   background-color: #292929;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-align-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1159,4 +1224,3 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 9px;
   color: #605F5F;
 }
-/*# sourceMappingURL=style.css.map */

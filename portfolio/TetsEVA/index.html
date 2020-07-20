@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EVA</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="burger">
+			<div class="burger__button">
+				<span class="burger__button-touch"></span>
+			</div>
+			<nav class="burger__menu">
+				<ul class="burger__menu-list">
+					<li>
+						<a href="#" class="burger__menu-link" data-title="Вхід">
+							Вхід
+							<svg width="25" height="27" viewBox="0 0 25 27" fill="none">
+								<path d="M17.918 6.29828C18.0351 9.23994 15.7117 11.7351 12.707 11.8515C9.70242 11.968 7.18795 9.66032 7.07091 6.71866C6.95387 3.777 9.27726 1.28187 12.2819 1.16543C15.2865 1.04898 17.801 3.35662 17.918 6.29828Z" stroke="#F58220" stroke-width="1.5"></path>
+								<path d="M0.75 22.7219C0.75 21.1324 1.07863 19.8928 1.63612 18.9198C2.19258 17.9487 3.00203 17.1994 4.03297 16.627C6.12403 15.4662 9.08737 15.0547 12.4956 15.0547C15.9039 15.0547 18.8694 15.4662 20.9627 16.6281C21.9947 17.201 22.8053 17.9511 23.3625 18.9235C23.9208 19.8977 24.25 21.1389 24.25 22.7305V24.8176C24.25 25.5776 23.6145 26.2236 22.8154 26.2236H2.18455C1.39035 26.2236 0.75 25.5823 0.75 24.8176V22.7219Z" stroke="#F58220" stroke-width="1.5"></path>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="burger__menu-link" data-title="Профіль">
+							Профіль
+						</a>
+					</li>
+					<li>
+						<a href="#" class="burger__menu-link" data-title="Блог">
+							Блог
+						</a>
+					</li>
+					<li>
+						<a href="#" class="burger__menu-link" data-title="Правила">
+							Правила
+						</a>
+					</li>
+					<li>
+						<a href="#" class="burger__menu-link" data-title="Учасниці">
+							Учасниці
+						</a>
+					</li>
+				</ul>
+				<div class="burger__menu-language">
+					<span class="burger__menu-language__list">
+						<a href="#">Укр
+							<svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+								<path d="M1.97192 1L8.47192 7.5L14.9719 1" stroke="#F58220" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</a>
+					</span>
+					<ul class="burger__menu-language__container">
+						<li><a href="#">Рус</a></li>
+						<li><a href="#">Англ</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="top__menu">
+			<div class="top__menu-logo">
+				<img src="./img/logo.png" alt="logo">
+				<div class="top__menu-language">
+					<span class="top__menu-language__list">
+						<a href="#">Укр
+							<svg width="16" height="9" viewBox="0 0 16 9" fill="none">
+								<path d="M1.97192 1L8.47192 7.5L14.9719 1" stroke="#F58220" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</a>
+					</span>
+					<ul class="top__menu-language__container">
+						<li><a href="#">Рус</a></li>
+						<li><a href="#">Англ</a></li>
+					</ul>
+				</div>
+			</div>
+			<nav class="top__menu-navigation">
+				<ul class="top__menu-navigation__list">
+					<li>
+						<a href="#" class="top__menu-navigation__link" data-title="Профіль">
+							Профіль
+						</a>
+					</li>
+					<li>
+						<a href="#" class="top__menu-navigation__link" data-title="Блог">
+							Блог
+						</a>
+					</li>
+					<li>
+						<a href="#" class="top__menu-navigation__link" data-title="Правила">
+							Правила
+						</a>
+					</li>
+					<li>
+						<a href="#" class="top__menu-navigation__link" data-title="Учасниці">
+							Учасниці
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="top__menu-login">
+				<a href="#" class="top__menu-login__link" data-title="Вхід">
+					Вхід
+					<svg width="25" height="27" viewBox="0 0 25 27" fill="none">
+						<path d="M17.918 6.29828C18.0351 9.23994 15.7117 11.7351 12.707 11.8515C9.70242 11.968 7.18795 9.66032 7.07091 6.71866C6.95387 3.777 9.27726 1.28187 12.2819 1.16543C15.2865 1.04898 17.801 3.35662 17.918 6.29828Z" stroke="#F58220" stroke-width="1.5"></path>
+						<path d="M0.75 22.7219C0.75 21.1324 1.07863 19.8928 1.63612 18.9198C2.19258 17.9487 3.00203 17.1994 4.03297 16.627C6.12403 15.4662 9.08737 15.0547 12.4956 15.0547C15.9039 15.0547 18.8694 15.4662 20.9627 16.6281C21.9947 17.201 22.8053 17.9511 23.3625 18.9235C23.9208 19.8977 24.25 21.1389 24.25 22.7305V24.8176C24.25 25.5776 23.6145 26.2236 22.8154 26.2236H2.18455C1.39035 26.2236 0.75 25.5823 0.75 24.8176V22.7219Z" stroke="#F58220" stroke-width="1.5"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="screen__one">
+				<div class="screen__one-bg"></div>
+				<div class="screen__one-bgtwo"></div>
+				<div class="screen__one-content">
+					<div class="screen__one-left">
+						<img src="./img/leaf-left-one.png" class="screen__one-left__bottom">
+						<img src="./img/leaf-left-two.png" class="screen__one-left__center">
+					</div>
+					<div class="screen__one-center">
+						<img src="./img/firstScreen-center.png" alt="" class="screen__one-center__women">
+						<h2 class="screen__one-center__name">Легкість дій — сила звершень!</h2>
+						<p class="screen__one-center__title">Ut et odio ipsum commodo neque a mauris, suspendisse vel. At pellentesque blandit orci a libero in quis eu.</p>
+						<button class="screen__one-center__button"><a href="#">Зареєструватися</a></button>
+						<span class="screen__one-center__subtitle">Реєстрація та участь безкоштовні</span>
+					</div>
+					<div class="screen__one-right">
+						<img src="./img/leaf-right-one.png" class="screen__one-right__center">
+						<img src="./img/leaf-right-two.png" class="screen__one-right__bottom">
+						<img src="./img/leaf-right-three.png" class="screen__one-right__hide">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="screen__two">
+				<div class="screen__two-bg"></div>
+				<div class="screen__two-leaf">
+					<img src="./img/leaf-left-three.png" alt="">
+				</div>
+				<div class="screen__two-tabs">
+					<nav class="screen__two-tabs__items">
+						<div href="#tab_01" class="screen__two-tabs__item" data-tab="0">
+							Київ
+						</div>
+						<div href="#tab_02" class="screen__two-tabs__item" data-tab="1">
+							Львів
+						</div>
+						<div href="#tab_03" class="screen__two-tabs__item" data-tab="2">
+							Харків
+						</div>
+					</nav>
+					<div class="screen__two-tabs__body">
+						<div class="screen__two-tabs__block opened" id="tab_01" >
+							<div class="screen__two-tabs__title">
+								<p>До забігу залишилось:</p>
+								<img src="./img/10work.png" alt="">
+							</div>
+							<div class="screen__two-tabs__conteiner">
+								<div class="screen__two-tabs__time" id="countdown">
+									<div class="screen__two-tabs__hour one days"></div>
+									<div class="screen__two-tabs__hour one hours"></div>
+									<div class="screen__two-tabs__hour one minutes"></div>
+									<div class="screen__two-tabs__hour one seconds"></div>
+								</div>
+							</div>
+						</div>
+						<div class="screen__two-tabs__block" id="tab_02">
+							<div class="screen__two-tabs__title">
+								<p>До забігу залишилось:</p>
+								<img src="./img/10work.png" alt="">
+							</div>
+							<div class="screen__two-tabs__conteiner">
+								<div class="screen__two-tabs__time" id="countdown1">
+									<div class="screen__two-tabs__hour two days"></div>
+									<div class="screen__two-tabs__hour two hours"></div>
+									<div class="screen__two-tabs__hour two minutes"></div>
+									<div class="screen__two-tabs__hour two seconds"></div>
+								</div>
+							</div>
+						</div>
+						<div class="screen__two-tabs__block" id="tab_03">
+							<div class="screen__two-tabs__title">
+								<p>До забігу залишилось:</p>
+								<img src="./img/10work.png" alt="">
+							</div>
+							<div class="screen__two-tabs__conteiner">
+								<div class="screen__two-tabs__time" id="countdown2">
+									<div class="screen__two-tabs__hour three days"></div>
+									<div class="screen__two-tabs__hour three hours"></div>
+									<div class="screen__two-tabs__hour three minutes"></div>
+									<div class="screen__two-tabs__hour three seconds"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="screen__three">
+				<div class="screen__three-name">
+					<h2>Умови проекту</h2>
+				</div>
+				<div class="screen__three-container">
+					<div class="screen__three-card">
+						<img src="./img/cart-one.png" alt="" class="screen__three-photo">
+						<span class="screen__three-number">1</span>
+						<h3 class="screen__three-title">Зареєструйся</h3>
+						<p class="screen__three-text">Це безкоштовно! Та дуже легко зроботи. Обери зручний варіант реєстрації, та розкажи про себе в особистому кабінеті</p>
+						<nav class="screen__three-links">
+							<svg width="34" height="14" viewBox="0 0 34 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L17 12L32 2" stroke="#E7EAED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<p class="screen__three-list">Обери місто свого забігу:</p>
+							<ul class="screen__three-box">
+								<li>
+									<a href="#"class="screen__three-link">Київ — Work.ua Kyiv Half Marathon</a>
+								</li>
+								<li>
+									<a href="#"class="screen__three-link">Львів — 4rd Molokiya Lviv Half Marathon</a>
+								</li>
+								<li>
+									<a href="#"class="screen__three-link">Харьків — Kharkiv Half Marathon</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="screen__three-card">
+						<img src="./img/cart-two.png" alt="" class="screen__three-photo">
+						<span class="screen__three-number">2</span>
+						<h3 class="screen__three-title">Обери свою мету</h3>
+						<p class="screen__three-text">Скільки кілометрів ти хочеш пробігти (4,2, 10 або 21 км). Протягом 4-х тижнів працюй online з експертами проекту та виконуй завдання.</p>
+						<nav class="screen__three-links">
+							<svg width="34" height="14" viewBox="0 0 34 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L17 12L32 2" stroke="#E7EAED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<p class="screen__three-list">Обери місто свого забігу:</p>
+							<ul class="screen__three-box">
+								<li>
+									<a href="#"class="screen__three-link">Київ — Work.ua Kyiv Half Marathon</a>
+								</li>
+								<li>
+									<a href="#"class="screen__three-link">Львів — 4rd Molokiya Lviv Half Marathon</a>
+								</li>
+								<li>
+									<a href="#"class="screen__three-link">Харьків — Kharkiv Half Marathon</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="screen__three-card">
+						<img src="./img/cart-three.png" alt="" class="screen__three-photo">
+						<span class="screen__three-number">3</span>
+						<h3 class="screen__three-title">Веди щоденник</h3>
+						<p class="screen__three-text">У своєму кабінеті <a href="#">(щоденнику) </a> записуй свої відчуття та враження після виконання кожного завдання </p>
+						<nav class="screen__three-links">
+							<svg width="34" height="14" viewBox="0 0 34 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 2L17 12L32 2" stroke="#E7EAED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<p class="screen__three-list">Обери місто свого забігу:</p>
+							<ul class="screen__three-box">
+								<li>
+									<a href="#"class="screen__three-link">Київ — Work.ua Kyiv Half Marathon</a>
+								</li>
+								<li>
+									<a href="#"class="screen__three-link">Львів — 4rd Molokiya Lviv Half Marathon</a>
+								</li>
+								<li>
+									<a href="#"class="screen__three-link">Харьків — Kharkiv Half Marathon</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>

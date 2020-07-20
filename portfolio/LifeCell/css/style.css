@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   -webkit-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
   transition: .7s ease-in-out;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -120,13 +121,16 @@ h1, h2, h3, h4, h5, h6 {
 .first {
   width: 800px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 80px auto;
@@ -147,32 +151,40 @@ h1, h2, h3, h4, h5, h6 {
   width: 105%;
   height: 3px;
   background-image: -webkit-gradient(linear, left top, right top, from(#009ACF), to(#742F9D));
+  background-image: -webkit-linear-gradient(left, #009ACF, #742F9D);
+  background-image: -o-linear-gradient(left, #009ACF, #742F9D);
   background-image: linear-gradient(to right, #009ACF, #742F9D);
   margin: 0 -15px;
 }
 
 .first__center {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
 .first__center-left, .first__center-right {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -180,17 +192,23 @@ h1, h2, h3, h4, h5, h6 {
 .first__center-left a, .first__center-right a {
   width: 170px;
   height: 50px;
+  background-image: -webkit-linear-gradient(305deg, #9FEC5A, #5AAC62);
+  background-image: -o-linear-gradient(305deg, #9FEC5A, #5AAC62);
   background-image: linear-gradient(145deg, #9FEC5A, #5AAC62);
-  border-radius: 30px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
   color: #ffffff;
   font-weight: bold;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
@@ -198,10 +216,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 50px;
   font-size: 15px;
   -webkit-transition-delay: .5s;
+       -o-transition-delay: .5s;
           transition-delay: .5s;
 }
 
 .first__center-left a:hover, .first__center-right a:hover {
+  background-image: -webkit-linear-gradient(305deg, #FF5A67, #CA3B67);
+  background-image: -o-linear-gradient(305deg, #FF5A67, #CA3B67);
   background-image: linear-gradient(145deg, #FF5A67, #CA3B67);
 }
 
@@ -219,13 +240,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .two {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 80px auto;
@@ -245,10 +269,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .two__down {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 120px;
@@ -256,13 +282,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .two__down-left {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   margin-right: 30px;
@@ -270,25 +299,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .two__down-right {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: end;
+  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
 
 .two__down-button {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
@@ -297,17 +332,23 @@ h1, h2, h3, h4, h5, h6 {
 .two__down-button a {
   width: 300px;
   height: 75px;
+  background-image: -webkit-linear-gradient(305deg, #9ED600, #60B00D, #89C800);
+  background-image: -o-linear-gradient(305deg, #9ED600, #60B00D, #89C800);
   background-image: linear-gradient(145deg, #9ED600, #60B00D, #89C800);
-  border-radius: 45px;
+  -webkit-border-radius: 45px;
+          border-radius: 45px;
   color: #ffffff;
   font-weight: bold;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
@@ -324,16 +365,20 @@ h1, h2, h3, h4, h5, h6 {
 .button__img {
   width: 90px;
   height: 90px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #DDDDDD;
   border: 3px	solid #89C800;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 -46px;
@@ -343,16 +388,20 @@ h1, h2, h3, h4, h5, h6 {
 .three {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 190px;
@@ -360,16 +409,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .three__top {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -389,10 +442,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .three__down {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 180px;
@@ -401,4 +456,3 @@ h1, h2, h3, h4, h5, h6 {
 .three__down-left {
   margin-right: 55px;
 }
-/*# sourceMappingURL=style.css.map */
